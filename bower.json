@@ -1,0 +1,20 @@
+{
+  "name": "lavn",
+  "version": "0.0.1",
+  "homepage": "https://github.com/richardj/lavn",
+  "authors": [
+    "Richard Japenga <treurmars@gmail.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
