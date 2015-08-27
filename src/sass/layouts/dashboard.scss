@@ -1,0 +1,28 @@
+
+/*
+ * Board layout
+ */
+
+.board {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #F9FBFB;
+
+  .column {
+    flex: 1;
+    padding: 0 6px;
+    overflow-y: visible;
+    border-left: 1px solid #E0E6E8;
+
+    header {
+      margin-bottom: 1.5em;
+      border-bottom: 1px solid #E0E6E8;
+    }
+
+    &.backlog {
+      background: #fff;
+      box-shadow: 4px 0 8px rgba(0,0,0, .14);
+    }
+  }
+}

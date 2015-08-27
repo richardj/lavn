@@ -1,0 +1,14 @@
+.header {
+  h1 {
+    flex: 1;
+  }
+  .main-navigation {
+    flex: 1;
+  }
+  .search-box {
+    flex: 1;
+  }
+  nav[role="user-menu"] {
+    flex: 1;
+  }
+}
