@@ -1,0 +1,24 @@
+{
+  "name": "lavn",
+  "version": "1.0.0",
+  "description": "Website voor de leukste amateurclub van Nederland",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richardj/lavn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richardj/lavn/issues"
+  },
+  "homepage": "https://github.com/richardj/lavn",
+  "dependencies": {
+    "bower": "^1.5.2",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4"
+  }
+}
