@@ -56,24 +56,3 @@ table {
 .header,
 main[role="main"] {
   display: flex; }
-
-/*
- * Header and Main navigation layout
- */
-.header {
-  color: #fff;
-  background: #283b73; }
-
-h1 {
-  font-size: 2em; }
-
-.header h1 {
-  flex: 1; }
-.header .main-navigation {
-  flex: 1; }
-.header .search-box {
-  flex: 1; }
-.header nav[role="user-menu"] {
-  flex: 1; }
-
-/* hello */
