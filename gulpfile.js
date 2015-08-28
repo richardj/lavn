@@ -27,9 +27,14 @@ gulp.task('sass', function() {
   .pipe(gulp.dest('./public/css'));
 });
 
+gulp.task('copyhtml', function() {
+  gulp.src('./src/views/*.html')
+    .pipe(gulp.dest('./public'));
+});
+
 gulp.task('watch', function() {
   gulp.watch(sassSrc + '/**/*.scss', ['sass']);
-
+  gulp.watch('./src/views/**/*.html', ['copyhtml']);
 });
 
 gulp.task('default', ['watch']);
