@@ -1,6 +1,10 @@
 @import '../helpers/variables';
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400,300);
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 .header,
 main[role="main"] {
   display: flex;
@@ -13,7 +17,22 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.container {
+  max-width: 1280px;
+  padding-bottom: 100px;
+  display: block;
+  margin: 80px auto;
+  position: relative;
+  border: 2px solid;
 
+  &.full {
+    max-width: 100%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
 
 /*
  * Jumbotron default
@@ -24,6 +43,7 @@ body {
   height: 80vh;
   position: relative;
   background: url('../img/lavn-header.jpg') no-repeat 50% 50%;
+  background-attachment: fixed;
   background-size: cover;
 
   .introduction {
@@ -45,8 +65,129 @@ body {
       display: inline-block;
       background: black;
     }
+    .btn {
+      color: #000;
+      background: $green;
+    }
   }
 }
+
+/*
+ * Week timeline
+ */
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+
+  .week {
+    flex-basis: 23%;
+    margin: 0 10px;
+    border: 2px solid grey;
+
+    h3 {
+      text-align: center;
+    }
+    h4 {
+      text-align: center;
+    }
+    &.current {
+      flex: 2;
+    }
+
+    /* counter */
+    .counter {
+      text-align: center;
+      span {
+        display: inline-block;
+      }
+      strong {
+        font-weight: bold;
+        display: block;
+      }
+    }
+  }
+}
+
+article {
+  &.placeholder {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 5px;
+    background: black;
+  }
+}
+
+.content-wrapper {
+  display: flex;
+
+  .half {
+    padding: 5px;
+    flex: 1;
+  }
+  .half:nth-child(1) {
+    padding-right: 2px;
+  }
+  .half:nth-child(2) {
+    padding-left: 3px;
+
+    article {
+      width: 100%;
+      display: inline-block;
+      height: 200px;
+    }
+    article:nth-child(1n+2) {
+      width: 49.65%;
+    }
+  }
+}
+
+.post-section {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -200px;
+  border: 1px solid;
+
+  .block {
+    width: 400px;
+    margin-top: -20%;
+    text-align: center;
+    background: red;
+  }
+}
+
+.jury {
+  display: flex;
+
+  .member {
+    flex: 1;
+
+    &.ruud .picture {
+      background: url('../img/member_ruud.jpg');
+      background-size: cover;
+    }
+    &.anouk .picture {
+      background: url('../img/member_anouk.jpg');
+      background-size: cover;
+    }
+    &.coen .picture {
+      background: url('../img/member_coen.jpg');
+      background-size: cover;
+    }
+    &.sander .picture {
+      background: url('../img/member_sander.jpg');
+      background-size: cover;
+    }
+    .picture {
+      height: 300px;
+      background-size: cover;
+    }
+  }
+}
+
+
+
 
 
 
@@ -61,12 +202,6 @@ textarea {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   border: none;
-}
-
-
-.column.backlog {
-  background: #fff;
-  box-shadow: 4px 0 8px rgba(0,0,0, .14);
 }
 
 .btn {
