@@ -9,3 +9,41 @@
     font-size: 2rem;
   }
 }
+
+
+
+/*
+ * Club page
+ */
+
+.club {
+  .card {
+    border: 1px solid grey;
+    background: white;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+  }
+
+  header {
+    display: flex;
+  }
+
+  .club-information {
+    display: flex;
+  }
+
+  .club-content {
+    padding-left: 40px;
+    .dream {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+
+  .club-members span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    background: url('http://static.bleacherreport.net/images/redesign/avatars/default-user-icon-comment.png') no-repeat 50% 50%;
+  }
+}
