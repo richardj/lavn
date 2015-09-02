@@ -4,29 +4,41 @@
   <meta charset="UTF-8"/>
   <title>Leukste amateurclub van Nederland</title>
   <link rel="stylesheet" href="css/base.css">
+
+  <!-- bower:css -->
+  <!-- endbower -->
+
+  <!-- inject:css -->
+  <!-- endinject -->
 </head>
 
-<body>
+<body ng-app="lavn">
   <header class="header">
-    <nav role="main-navigation">
-      <a href="#">Home</a>
-      <a href="#">Hoe werkt het?</a>
-      <a href="#">Zoeken een club</a>
-      <a href="#">Contact</a>
-    </nav>
+    <div class="wrapper">
+      <nav role="main-navigation">
+        <a href="#">Home</a>
+        <a href="#">Hoe werkt het?</a>
+        <a href="#">Zoek een club</a>
+        <a href="#">Contact</a>
+      </nav>
 
-    <div class="branding"><a href="#">Logo</a></div> 
+      <div class="branding"><a href="#">Logo</a></div>
 
-    <nav role="user-navigation">
-      <a href="#" class="btn">Doe mee</a>
-      <a href="#" class="btn">Login</a>
-    </nav>
+      <nav role="user-navigation">
+        <div class="wrapper">
+          <a href="#" class="btn solid green">Doe mee</a>
+          <a href="#" class="btn orange">Login</a>
+        </div>
+      </nav>
 
-    <nav role="user-navigation" class="logged-in">
-      <a href="#" class="clublogo">Mijn club</a>
-      <a href="#">Mijn profiel</a>
-      <a href="#">Uitloggen</a>
-    </nav>
+      <nav role="user-navigation" class="logged-in">
+        <div class="wrapper">
+          <a href="#" class="clublogo">Mijn club</a>
+          <a href="#">Mijn profiel</a>
+          <a href="#">Uitloggen</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <section class="jumbotron">
@@ -38,13 +50,11 @@
     <article class="introduction">
       <h1>Win €20.000 voor jouw club</h1>
       <p>Maak elke week kans op prijzen en een plek in de finale om €20.000 te winnen. Meld je aan, zoek je club, vul de clubdroom in en doe mee met de opdrachten.</p>
-      <a href="#" class="btn">Doe mee</a> of <a href="#" class="btn">Login</a>
+      <a href="#" class="btn solid purple">Doe mee</a> of <a href="#" class="btn green">Login</a>
     </article>
   </section>
 
   <section class="container">
-    <h2>De weekopdrachten</h2>
-
     <div class="timeline">
       <div class="week ended">
         <h3>Weekopdracht 1</h3>
@@ -54,7 +64,7 @@
       <div class="week current">
         <h3>Weekopdracht 2</h3>
         <h4>Deadline</h4>
-        <p class="counter">
+        <p class="counter" id="countdown">
           <span class="days">
             <strong>03</strong>
             Dagen
@@ -189,5 +199,14 @@
       <a href="http://ing.nl">ING</a>
     </p>
   </footer>
+
+  <!-- bower:js -->
+  <!-- endbower -->
+
+  <!-- inject:js -->
+  <!-- endinject -->
+
+  <script src="./scripts/angular.min.js"></script>
+  <script src="./scripts/project.js"></script>
 </body>
 </html>
