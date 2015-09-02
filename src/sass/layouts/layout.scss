@@ -66,10 +66,6 @@ body {
       display: inline-block;
       background: black;
     }
-    .btn {
-      color: #000;
-      background: $green;
-    }
   }
 }
 
@@ -83,8 +79,8 @@ body {
 
   .week {
     flex-basis: 23%;
-    margin: 0 10px;
     border: 2px solid grey;
+    z-index: 10;
 
     h3 {
       text-align: center;
@@ -93,6 +89,11 @@ body {
       text-align: center;
     }
     &.current {
+      padding: 50px 0;
+      margin: -25px -5px;
+      z-index: 15;
+      background: lightgrey;
+      box-shadow: 0 5px 10px rgba(0,0,0,.5);
       flex: 2;
     }
 
@@ -203,11 +204,4 @@ textarea {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   border: none;
-}
-
-.btn {
-  padding: 3px 6px;
-  display: inline-block;
-  background: grey;
-  border-radius: 3px;
 }

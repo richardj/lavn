@@ -1,3 +1,4 @@
+@import '../helpers/variables';
 /*
  * 16px = 1rem
  */
@@ -48,9 +49,63 @@ a.btn {
 }
 
 .btn {
-  padding: 10px;
-  color: #fff;
-  background: black;
+  padding: 10px 30px 10px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  transition: box-shadow .13s ease-in, padding .13s ease-in;
+
+  &:before {
+    content: "<";
+    position: absolute;
+    font-weight: bold;
+    top: 9px;
+    left: 12px;
+  }
+
+  /* color values */
+  &.green {
+    color: $green;
+  }
+  &.purple {
+    color: $purple;
+  }
+  &.orange {
+    color: $orange;
+  }
+
+  /* solids */
+  &.solid {
+    color: #fff;
+    background: red;
+    box-shadow: inset 6px 0 0;
+  }
+
+  &.solid.green {
+    background: $green;
+    box-shadow: inset 6px 0 0 $green-accent;
+  }
+  &.solid.purple {
+    background: $purple;
+    box-shadow: inset 6px 0 0 $purple-accent;
+  }
+
+
+  /* hover states */
+  &:hover {
+    padding: 10px 12px 10px 50px;
+  }
+
+  &.green:hover {
+    box-shadow: inset 36px 0 0 $green-accent;
+  }
+  &.purple:hover {
+    box-shadow: inset 36px 0 0 $purple-accent;
+  }
+  &.orange:hover {
+    box-shadow: inset 36px 0 0 $orange-accent;
+  }
 }
 
 
