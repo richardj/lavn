@@ -4,13 +4,34 @@ var gulp          = require('gulp');
 var sass          = require('gulp-sass');
 var concat        = require('gulp-concat');
 var rename        = require('gulp-rename');
+var merge         = require('merge-stream');
 var sourcemaps    = require('gulp-sourcemaps');
 var autoprefixer  = require('gulp-autoprefixer');
-
+var wiredep       = require('wiredep');
+var plugins       = require('gulp-load-plugins')();
 
 var sassSrc     = './src/sass';
 var cssDest     = './public/css';
 var jsDest      = './public/scripts';
+
+
+/*
+gulp.task('vendor-scripts', ['install'], function() {
+  return gulp.src(wiredep().js)
+    .pipe(gulp.dest('build/vendor'));
+});
+
+
+gulp.task('vendor-css', ['install'], function() {
+  return gulp.src(wiredep().css)
+    .pipe(gulp.dest('build/vendor'));
+});
+*/
+
+
+
+
+
 
 gulp.task('sass', function() {
   gulp.src('./src/sass/**/*.scss')
@@ -32,9 +53,24 @@ gulp.task('copyhtml', function() {
     .pipe(gulp.dest('./public'));
 });
 
+gulp.task('copyscripts', function() {
+  var angular = gulp.src('./bower_components/angular/angular.min.js')
+    .pipe(gulp.dest('./public/scripts'));
+
+  var layout = gulp.src('./src/scripts/layout.js')
+    .pipe(gulp.dest('./public/scripts'));
+
+  var project = gulp.src('./src/scripts/project.js')
+    .pipe(gulp.dest('./public/scripts'));
+
+  return merge(angular, layout, project);
+});
+
+
 gulp.task('watch', function() {
   gulp.watch(sassSrc + '/**/*.scss', ['sass']);
   gulp.watch('./src/views/**/*.html', ['copyhtml']);
+  gulp.watch('./src/scripts/**/*.js', ['copyscripts']);
 });
 
 gulp.task('default', ['watch']);
