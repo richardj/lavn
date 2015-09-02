@@ -24,5 +24,10 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.5.2"
+  },
+  "devDependencies": {
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "merge-stream": "^1.0.0",
+    "wiredep": "^3.0.0-beta"
   }
 }
