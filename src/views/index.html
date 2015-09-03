@@ -4,12 +4,6 @@
   <meta charset="UTF-8"/>
   <title>Leukste amateurclub van Nederland</title>
   <link rel="stylesheet" href="css/base.css">
-
-  <!-- bower:css -->
-  <!-- endbower -->
-
-  <!-- inject:css -->
-  <!-- endinject -->
 </head>
 
 <body ng-app="lavn">
@@ -17,8 +11,9 @@
     <div class="wrapper">
       <nav role="main-navigation">
         <a href="#">Home</a>
-        <a href="#">Hoe werkt het?</a>
+        <a href="#">Weekopdrachten</a>
         <a href="#">Zoek een club</a>
+        <a href="#">FAQ</a>
         <a href="#">Contact</a>
       </nav>
 
@@ -63,25 +58,30 @@
 
       <div class="week current">
         <h3>Weekopdracht 2</h3>
-        <h4>Deadline</h4>
-        <p class="counter" id="countdown">
-          <span class="days">
-            <strong>03</strong>
-            Dagen
-          </span>
-          <span class="hours">
-            <strong>14</strong>
-            Uur
-          </span>
-          <span class="days">
-            <strong>54</strong>
-            Minuten
-          </span>
-          <span class="days">
-            <strong>14</strong>
-            Seconden
-          </span>
-        </p>
+        <div class="content">
+          <h4>Deadline</h4>
+          <p>
+            Bekijk <a href="#">hier</a> snel wat je moet doen om jouw club leuke prijzen te laten winnen.
+          </p>
+          <p class="counter" id="countdown">
+            <span class="days">
+              <strong>03</strong>
+              Dagen
+            </span>
+            <span class="hours">
+              <strong>14</strong>
+              Uur
+            </span>
+            <span class="days">
+              <strong>54</strong>
+              Minuten
+            </span>
+            <span class="days">
+              <strong>14</strong>
+              Seconden
+            </span>
+          </p>
+        </div>
       </div>
 
       <div class="week closed">
@@ -136,7 +136,7 @@
     <div class="post-section">
       <div class="block login">
         <h2>Win €20.000 voor jouw club</h2>
-        <a href="#" class="btn">Doe mee</a> of <a href="#" class="btn">Login</a>
+        <a href="#" class="btn solid green">Doe mee</a> <a href="#" class="btn orange">Login</a>
       </div>
     </div>
   </section>
@@ -199,12 +199,6 @@
       <a href="http://ing.nl">ING</a>
     </p>
   </footer>
-
-  <!-- bower:js -->
-  <!-- endbower -->
-
-  <!-- inject:js -->
-  <!-- endinject -->
 
   <script src="./scripts/angular.min.js"></script>
   <script src="./scripts/project.js"></script>
