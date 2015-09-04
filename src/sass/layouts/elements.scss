@@ -65,6 +65,11 @@ a.btn {
     font-weight: bold;
     top: 9px;
     left: 12px;
+    transition: color .13s ease-in;
+  }
+
+  &:not(.solid):hover:before {
+    color: white;
   }
 
   /* color values */

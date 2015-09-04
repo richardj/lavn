@@ -78,7 +78,8 @@ body {
  */
 
 .timeline {
-  margin-bottom: 2rem;
+  margin-top: -100px;
+  margin-bottom: 85px;
   display: flex;
   justify-content: space-between;
 
@@ -87,6 +88,7 @@ body {
     border: 1px solid $default-linecolor;
     z-index: 10;
     padding: 10px;
+    background: white;
 
     .content {
       margin: 17px;
@@ -103,7 +105,21 @@ body {
       margin: -25px -1px;
       z-index: 15;
       box-shadow: 0 5px 10px rgba(0,0,0,.5);
+      border-color: $green;
       flex: 2;
+      color: #fff;
+      position: relative;
+      background: $green;
+
+      footer {
+        margin: 3rem -18px -5rem -18px;
+        color: $default-textcolor;
+        background: #fff;
+      }
+
+      a {
+        color: #fff;
+      }
 
       h3 {
         height: 60px;
@@ -114,8 +130,18 @@ body {
         line-height: 30px;
         text-transform: uppercase;
         background: $green;
+        box-shadow: inset 60px 0 0 $green-accent;
+        transition: box-shadow 0.13s ease-in;
+
+        &:hover {
+          box-shadow: inset 24rem 0 0 $green-accent;
+        }
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
       }
-      h3:before {
+/*      h3:before {
         width: 60px;
         height: 60px;
         content: "";
@@ -124,7 +150,7 @@ body {
         top: 0;
         left: 0;
         background: $green-accent;
-      }
+      }*/
     }
 
     &.closed {
@@ -134,15 +160,21 @@ body {
 
     /* counter */
     .counter {
-      text-align: center;
+      /*text-align: center;*/
+      display: flex;
+      justify-content: space-between;
       text-transform: uppercase;
 
       span {
+        margin: 16px 0 10px;
+        padding: 0 16px;
+        font-size: 10px;
         display: inline-block;
       }
       strong {
         font-weight: bold;
         display: block;
+        font-size: 24px;
       }
     }
   }
@@ -165,6 +197,7 @@ article {
     flex: 1;
   }
   .half:nth-child(1) {
+    padding-left: 0;
     padding-right: 2px;
   }
   .half:nth-child(2) {
@@ -183,16 +216,51 @@ article {
 
 .post-section {
   position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -200px;
-  border: 1px solid;
+  left: 72%;
+
+  h2 {
+    margin-bottom: 1rem;
+    display: block;
+  }
 
   .block {
-    width: 400px;
     margin-top: -20%;
-    text-align: center;
   }
+}
+
+
+
+#how-does-it-work {
+  position: relative;
+
+  .left {
+    flex: 50;
+    max-width: 66%;
+    padding: 40px 300px 40px 40px;
+    border: 1px solid $default-linecolor;
+    background: #fff;
+
+    ul li {
+      margin-bottom: 1.5rem;
+    }
+  }
+  h2 {
+    position: absolute;
+    left: 72%;
+  }
+
+  .right {
+    margin: 5rem 0;
+    flex: 25;
+
+    .pull-left {
+      margin-left: -300px;
+    }
+  }
+}
+
+#featured {
+
 }
 
 .jury {
@@ -200,7 +268,32 @@ article {
 
   .member {
     flex: 1;
+    position: relative;
 
+    h3 {
+      width: 100%;
+      height: 60px;
+      margin: -1px -1px 0 -1px;
+      padding-left: 80px;
+      position: relative;
+      color: #fff;
+      font-weight: 700;
+      line-height: 30px;
+      position: absolute;
+      bottom: -60px;
+      text-transform: uppercase;
+      background: $green;
+      box-shadow: inset 60px 0 0 $green-accent;
+      transition: box-shadow 0.13s ease-in;
+
+      &:hover {
+        box-shadow: inset 24rem 0 0 $green-accent;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
     &.ruud .picture {
       background: url('../img/member_ruud.jpg');
       background-size: cover;
@@ -225,7 +318,10 @@ article {
 }
 
 
-
+footer[role="document-footer"] {
+  height: 95px;
+  background: white;
+}
 
 
 
