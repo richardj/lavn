@@ -14,7 +14,6 @@
         <a href="#">Weekopdrachten</a>
         <a href="#">Zoek een club</a>
         <a href="#">FAQ</a>
-        <a href="#">Contact</a>
       </nav>
 
       <div class="branding"><a href="#">Logo</a></div>
@@ -57,30 +56,31 @@
       </div>
 
       <div class="week current">
-        <h3>Weekopdracht 2</h3>
+        <h3><a href="#">Weekopdracht 2</a></h3>
         <div class="content">
-          <h4>Deadline</h4>
           <p>
             Bekijk <a href="#">hier</a> snel wat je moet doen om jouw club leuke prijzen te laten winnen.
           </p>
-          <p class="counter" id="countdown">
-            <span class="days">
-              <strong>03</strong>
-              Dagen
-            </span>
-            <span class="hours">
-              <strong>14</strong>
-              Uur
-            </span>
-            <span class="days">
-              <strong>54</strong>
-              Minuten
-            </span>
-            <span class="days">
-              <strong>14</strong>
-              Seconden
-            </span>
-          </p>
+          <footer>
+            <p class="counter" id="countdown">
+              <span class="days">
+                <strong>03</strong>
+                Dagen
+              </span>
+              <span class="hours">
+                <strong>14</strong>
+                Uur
+              </span>
+              <span class="days">
+                <strong>54</strong>
+                Minuten
+              </span>
+              <span class="days">
+                <strong>14</strong>
+                Seconden
+              </span>
+            </p>
+          </footer>
         </div>
       </div>
 
@@ -95,8 +95,8 @@
       </div>
     </div>
 
-    <h2>Hoe werkt het</h2>
-    <div class="content-wrapper">
+    <div class="content-wrapper" id="how-does-it-work">
+      <h2>Hoe werkt het</h2>
       <div class="half left">
         <ul>
           <li>
@@ -130,7 +130,9 @@
         </ul>
       </div>
       <div class="half right">
-        <div style="background: black; width: 100%; height: 400px;"></div>
+        <div class="pull-left">
+          <div style="background: black; width: 100%; height: 380px;" class="video placeholder"></div>
+        </div>
       </div>
     </div>
     <div class="post-section">
@@ -141,7 +143,7 @@
     </div>
   </section>
 
-  <section class="container">
+  <section class="container" id="featured">
     <h2>Uitgelicht</h2>
 
     <div class="content-wrapper">
@@ -163,30 +165,32 @@
     <h2>De Jury</h2>
     <div class="jury">
       <div class="member ruud">
-        <h2>Ruud van Nistelrooij</h2>
         <div class="picture">
-
+          <h3>Ruud van Nistelrooij</h3>
         </div>
       </div>
 
       <div class="member anouk">
-        <h2>Anouk Hoogendijk</h2>
-        <div class="picture"></div>
+        <div class="picture">
+          <h3>Anouk Hoogendijk</h3>
+        </div>
       </div>
 
       <div class="member coen">
-        <h2>Coen Swijnenberg</h2>
-        <div class="picture"></div>
+        <div class="picture">
+          <h3>Coen Swijnenberg</h3>
+        </div>
       </div>
 
       <div class="member sander">
-        <h2>Sander Lantinga</h2>
-        <div class="picture"></div>
+        <div class="picture">
+          <h3>Sander Lantinga</h3>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer>
+  <footer role="document-footer">
     <nav>
       <a href="#">Gebruikersvoorwaarden</a> -
       <a href="#">Privacy policy</a> -
