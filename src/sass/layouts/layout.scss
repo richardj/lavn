@@ -134,7 +134,7 @@ body {
         transition: box-shadow 0.13s ease-in;
 
         &:hover {
-          box-shadow: inset 24rem 0 0 $green-accent;
+          box-shadow: inset 30rem 0 0 $green-accent;
         }
         a {
           color: #fff;
@@ -265,6 +265,17 @@ article {
 
 .jury {
   display: flex;
+
+  &:after {
+    content: "";
+    width: 200%;
+    left: -50%;
+    position: absolute;
+    top: -50%;
+    height: 50vh;
+    background: red;
+    z-index: -1;
+  }
 
   .member {
     flex: 1;
