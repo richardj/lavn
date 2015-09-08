@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Leukste amateurclub van Nederland</title>
+  <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body ng-app="lavn" class="weekassignment">
+  <header class="header">
+    <div class="wrapper">
+      <nav role="main-navigation">
+        <a href="index.html">Home</a>
+        <a href="weekassignment.html" class="active">Weekopdrachten</a>
+        <a href="#">Zoek een club</a>
+        <a href="#">FAQ</a>
+      </nav>
+
+      <div class="branding"><a href="#">Logo</a></div>
+
+      <nav role="user-navigation">
+        <div class="wrapper">
+          <a href="#" class="btn solid green">Doe mee</a>
+          <a href="#" class="btn orange">Login</a>
+        </div>
+      </nav>
+
+      <nav role="user-navigation" class="logged-in">
+        <div class="wrapper">
+          <a href="#" class="clublogo">Mijn club</a>
+          <a href="#">Mijn profiel</a>
+          <a href="#">Uitloggen</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="jumbotron">
+  </section>
+
+  <section class="container">
+    <div class="timeline">
+      <div class="week ended">
+        <h3>Weekopdracht 1</h3>
+        <h4>Winnaar</h4>
+      </div>
+
+      <div class="week current">
+        <h3><a href="#">Weekopdracht 2</a></h3>
+        <div class="content">
+          <p>
+            Bekijk <a href="#">hier</a> snel wat je moet doen om jouw club leuke prijzen te laten winnen.
+          </p>
+          <footer>
+            <p class="counter" id="countdown">
+              <span class="days">
+                <strong>03</strong>
+                Dagen
+              </span>
+              <span class="hours">
+                <strong>14</strong>
+                Uur
+              </span>
+              <span class="days">
+                <strong>54</strong>
+                Minuten
+              </span>
+              <span class="days">
+                <strong>14</strong>
+                Seconden
+              </span>
+            </p>
+          </footer>
+        </div>
+      </div>
+
+      <div class="week closed">
+          <h3>Weekopdracht 3</h3>
+        <div class="locked">
+          <p>Deze opdracht wordt bekendgemaakt op <strong>16 oktober</strong></p>
+        </div>
+      </div>
+
+      <div class="week closed">
+          <h3>Weekopdracht 4</h3>
+        <div class="locked">
+          <p>Deze opdracht wordt bekendgemaakt op <strong>23 oktober</strong></p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="container">
+    <h2 class="multiline"><span>De tweede</span><span>Weekopdracht</span></h2>
+    <div class="half left">
+      <h1>Zet de grootste supportersactie op touwen tijdens een jeugdwedstrijd van jouw club.</h1>
+    </div>
+    <article class="placeholder">
+
+    </article>
+  </section>
+
+  <div class="before-bg"></div>
+
+  <section class="container" id="prices">
+    <h2>De prijzen</h2>
+    <div class="prices">
+      <div class="price first-place">
+        <h3>Eerste plaats</h3>
+        <p>Een finale plaats en er komt een 538 DJ bij jouw club draaien</p>
+      </div>
+
+      <div class="price second-place">
+        <h3>Tweede plaats</h3>
+        <p>Jullie mogen de spelersbus van het Nederlands elftal gebruiken</p>
+      </div>
+
+      <div class="price third-place">
+        <h3>Derde plaats</h3>
+        <p>1000 gloednieuwe voetballen voor de hele club</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer role="document-footer">
+    <div class="wrapper">
+      <nav>
+        <a href="#">Gebruikersvoorwaarden</a> -
+        <a href="#">Privacy policy</a> -
+        <a href="#">Cookie policy</a> -
+      </nav>
+
+      <p class="partners">
+        <a href="http://538.nl" class="partner radio538"><img src="img/icons/logo-538.png" alt="logo radio 538" /></a>
+        <a href="http://ing.nl" class="partner ing"><img src="img/icons/logo-ing.png" alt="logo ING bank" /></a>
+        Mede mogelijk gemaakt door: <a href="http://www.knvb.nl" class="partner knvb"><img src="img/icons/logo-knvb.png" alt="logo KNVB" /></a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./scripts/angular.min.js"></script>
+  <script src="./scripts/project.js"></script>
+</body>
+</html>

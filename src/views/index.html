@@ -10,8 +10,8 @@
   <header class="header">
     <div class="wrapper">
       <nav role="main-navigation">
-        <a href="#">Home</a>
-        <a href="#">Weekopdrachten</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="weekassignment.html">Weekopdrachten</a>
         <a href="#">Zoek een club</a>
         <a href="#">FAQ</a>
       </nav>
@@ -36,11 +36,11 @@
   </header>
 
   <section class="jumbotron">
-    <p class="partners">
+<!--     <p class="partners">
       <a href="http://www.knvb.nl">KNVB</a>
       <a href="http://538.nl">538</a>
       <a href="http://ing.nl">ING</a>
-    </p>
+    </p> -->
     <article class="introduction">
       <h1>Win €20.000 voor jouw club</h1>
       <p>Maak elke week kans op prijzen en een plek in de finale om €20.000 te winnen. Meld je aan, zoek je club, vul de clubdroom in en doe mee met de opdrachten.</p>
@@ -85,13 +85,17 @@
       </div>
 
       <div class="week closed">
-        <h3>Weekopdracht 3</h3>
-        <p>Start 16 oktober</p>
+          <h3>Weekopdracht 3</h3>
+        <div class="locked">
+          <p>Deze opdracht wordt bekendgemaakt op <strong>16 oktober</strong></p>
+        </div>
       </div>
 
       <div class="week closed">
-        <h3>Weekopdracht 4</h3>
-        <p>Start 23 oktober</p>
+          <h3>Weekopdracht 4</h3>
+        <div class="locked">
+          <p>Deze opdracht wordt bekendgemaakt op <strong>23 oktober</strong></p>
+        </div>
       </div>
     </div>
 
@@ -148,8 +152,12 @@
 
     <div class="content-wrapper">
       <div class="half">
-        <article class="placeholder">
+        <article class="featured-spot placeholder">
           
+          <header>
+            <h3>ING tip van de week</h3>
+            <p>“Cras ultricies mi eu turpis hendrerit fringilla. Ut non enim eleifend felis pretium feugiat. In auctor lobortis lacus.”</p>
+          </header>
         </article>
       </div>
 
@@ -161,7 +169,8 @@
     </div>
   </section>
 
-  <section class="container">
+  <div class="before-bg"></div>
+  <section class="container" id="jury">
     <h2>De Jury</h2>
     <div class="jury">
       <div class="member ruud">
@@ -191,17 +200,19 @@
   </section>
 
   <footer role="document-footer">
-    <nav>
-      <a href="#">Gebruikersvoorwaarden</a> -
-      <a href="#">Privacy policy</a> -
-      <a href="#">Cookie policy</a> -
-    </nav>
+    <div class="wrapper">
+      <nav>
+        <a href="#">Gebruikersvoorwaarden</a> -
+        <a href="#">Privacy policy</a> -
+        <a href="#">Cookie policy</a> -
+      </nav>
 
-    <p class="partners">
-      <a href="http://www.knvb.nl">KNVB</a>
-      <a href="http://538.nl">538</a>
-      <a href="http://ing.nl">ING</a>
-    </p>
+      <p class="partners">
+        <a href="http://538.nl" class="partner radio538"><img src="img/icons/logo-538.png" alt="logo radio 538" /></a>
+        <a href="http://ing.nl" class="partner ing"><img src="img/icons/logo-ing.png" alt="logo ING bank" /></a>
+        Mede mogelijk gemaakt door: <a href="http://www.knvb.nl" class="partner knvb"><img src="img/icons/logo-knvb.png" alt="logo KNVB" /></a>
+      </p>
+    </div>
   </footer>
 
   <script src="./scripts/angular.min.js"></script>
