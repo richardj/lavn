@@ -36,6 +36,21 @@ body {
     color: white;
     display: inline-block;
     background: black;
+
+    &.multiline {
+      background: none;
+      padding: 0;
+
+      span {
+        padding: 4px 10px;
+        background: black;
+
+        &:last-child {
+          margin-top: 10px;
+          display: block;
+        }
+      }
+    }
   }
 }
 
@@ -44,10 +59,11 @@ body {
  */
 
 .jumbotron {
-  width: 100%;
+  width: 95%;
   height: 80vh;
+  margin: 0 auto;
   position: relative;
-  background: url('../img/lavn-header.jpg') no-repeat 50% 50%;
+  background: $default-bg url('../img/lavn-header.jpg') no-repeat 50% 50%;
   background-attachment: fixed;
   background-size: cover;
 
@@ -87,18 +103,69 @@ body {
     flex-basis: 23%;
     border: 1px solid $default-linecolor;
     z-index: 10;
-    padding: 10px;
     background: white;
 
     .content {
       margin: 17px;
     }
 
+    .locked {
+      height: 132px;
+      margin: 9px;
+      padding: 10px;
+      color: $default-textcolor;
+      background: #f7f7f7;
+      background-image: repeating-linear-gradient(135deg, transparent, transparent 1px, rgba(255,255,255,.5) 1px, rgba(255,255,255,.5) 10px);
+    }
+
     h3 {
-      text-align: center;
+      height: 60px;
+      margin: -1px -1px 1rem -1px;
+      padding-left: 70px;
+      position: relative;
+      color: #fff;
+      font-weight: 700;
+      line-height: 30px;
+      color: $green;
+      background: #fff;
+      text-transform: uppercase;
+      border-bottom: 1px solid $default-linecolor;
+      box-shadow: inset 60px 0 0 $default-bg;
+
+      &:before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        top: 20px;
+        left: 20px;
+        position: absolute;
+        background: url('../img/icons/week-locked.svg') no-repeat 0 0;
+      }
     }
     h4 {
       text-align: center;
+    }
+    &.ended {
+      padding: 0;
+      h3 {
+        position: relative;
+        box-shadow: inset 60px 0 0 $green-accent;
+        /* transition: box-shadow 0.13s ease-in; */
+
+        &:hover {
+          /* box-shadow: inset 30rem 0 0 $green-accent; */
+        }
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        &:before {
+          top: 20px;
+          left: 20px;
+          background: url('../img/icons/week-ended.svg') no-repeat 0 0;
+        }
+      }
     }
     &.current {
       padding: 0 0 50px 0;
@@ -112,7 +179,10 @@ body {
       background: $green;
 
       footer {
-        margin: 3rem -18px -5rem -18px;
+        width: 100%;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
         color: $default-textcolor;
         background: #fff;
       }
@@ -129,6 +199,7 @@ body {
         font-weight: 700;
         line-height: 30px;
         text-transform: uppercase;
+        border-bottom: none;
         background: $green;
         box-shadow: inset 60px 0 0 $green-accent;
         transition: box-shadow 0.13s ease-in;
@@ -140,21 +211,19 @@ body {
           color: #fff;
           text-decoration: none;
         }
+        &:before {
+          top: 10px;
+          left: 17px;
+          background: url('../img/icons/week-current.svg') no-repeat 0 0;
+        }
       }
-/*      h3:before {
-        width: 60px;
-        height: 60px;
-        content: "";
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        background: $green-accent;
-      }*/
+    }
+
+    &:last-child {
+      border-left: none;
     }
 
     &.closed {
-      background-color: gray;
       background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.5) 1px, rgba(255,255,255,.5) 2px);
     }
 
@@ -188,6 +257,60 @@ article {
     background: black;
   }
 }
+
+/*
+ * Frontpage featured
+ */
+
+#featured {
+  background: url('../img/bg/background-featured.png') no-repeat 100% 100%;
+  background-attachment: fixed;
+
+  .content-wrapper {
+    max-width: 1100px;
+  }
+
+  h2 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .featured-spot {
+    position: relative;
+
+    header {
+      width: 100%;
+      padding: 30px 25px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: white;
+    }
+
+    h3 {
+      padding-left: 50px;
+      position: relative;
+      background: url('../img/icons/logo-ing.png') no-repeat 100% 11px;
+    }
+    h3:before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: 0;
+      top: 8px;
+      background: url('../img/icons/icon-idea.svg') no-repeat 0 0;
+    }
+  }
+}
+
+#jury {
+  h2 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 
 .content-wrapper {
   display: flex;
@@ -243,6 +366,12 @@ article {
     ul li {
       margin-bottom: 1.5rem;
     }
+
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      color: $default-textcolor;
+    }
   }
   h2 {
     position: absolute;
@@ -259,23 +388,19 @@ article {
   }
 }
 
-#featured {
-
+.before-bg {
+  content: "";
+  width: 150%;
+  left: 0;
+  position: absolute;
+  top: -50%;
+  height: 50vh;
+  background: red;
+  z-index: -1;
 }
 
 .jury {
   display: flex;
-
-  &:after {
-    content: "";
-    width: 200%;
-    left: -50%;
-    position: absolute;
-    top: -50%;
-    height: 50vh;
-    background: red;
-    z-index: -1;
-  }
 
   .member {
     flex: 1;
@@ -332,6 +457,24 @@ article {
 footer[role="document-footer"] {
   height: 95px;
   background: white;
+
+  .wrapper {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  nav {
+    padding-top: 40px;
+  }
+
+  a {
+    color: #000;
+  }
+  .partners {
+    position: absolute;
+    top: 40px;
+    right: 0;
+  }
 }
 
 

@@ -1,0 +1,19 @@
+@import '../helpers/variables';
+
+/* modal wrapper */
+
+.modal-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+.modal {
+  position: relative;
+  /* close button */
+  .close {
+    right: 10px;
+    top: 10px;
+    position: absolute;
+  }
+}

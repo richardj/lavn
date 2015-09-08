@@ -1,0 +1,64 @@
+@import '../helpers/variables';
+
+/*
+ * jumbotron
+ */
+
+.weekassignment .jumbotron {
+  height: 40vh;
+  background-image: none;
+}
+
+
+
+/*
+ * Prices
+ */
+
+.prices {
+  display: flex;
+
+  .price {
+    flex: 1;
+    border: 1px solid $default-linecolor;
+    background: white;
+
+    h3 {
+      padding-left: 90px;
+      position: relative;
+      font-weight: bold;
+
+      &:before {
+        height: 80px;
+        width: 81px;
+        content: "";
+        display: block;
+        border-right: 1px solid $default-linecolor;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    &.first-place h3 {
+      color: $gold;
+    }
+    &.second-place h3 {
+      color: $silver;
+    }
+    &.third-place h3 {
+      color: $bronze;
+    }
+  }
+}
+
+
+
+.weekassignment {
+  .half {
+    max-width: 66%;
+    padding: 40px 300px 40px 40px;
+    border: 1px solid $default-linecolor;
+    background: #fff;
+  }
+}

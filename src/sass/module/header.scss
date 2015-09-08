@@ -30,7 +30,8 @@
       color: #000;
       text-decoration: none;
 
-      &:hover {
+      &:hover,
+      &.active {
         color: $orange;
       }
     }
@@ -41,11 +42,11 @@
     height: 200px;
     border-radius: 50%;
     border: 5px solid #fff;
-    background: #ccc;
     text-indent: -9999px;
     position: absolute;
     left: 50%;
     margin-left: -100px;
+    background: url('../img/LAVN_large.svg') no-repeat 0 0;
 
     &.small {
       width: 100px;
