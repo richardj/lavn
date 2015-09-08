@@ -41,12 +41,11 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 5px solid #fff;
     text-indent: -9999px;
     position: absolute;
     left: 50%;
     margin-left: -100px;
-    background: url('../img/LAVN_large.svg') no-repeat 0 0;
+    background: url('../img/LAVN_large.png') no-repeat 50% 50%;
 
     &.small {
       width: 100px;

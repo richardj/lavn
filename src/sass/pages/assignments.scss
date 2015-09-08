@@ -4,9 +4,85 @@
  * jumbotron
  */
 
-.weekassignment .jumbotron {
-  height: 40vh;
-  background-image: none;
+.weekassignment {
+
+  .jumbotron {
+    height: 25vh;
+    background-image: none;
+  }
+  .container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  #weekassignment {
+    max-width: 100%;
+    padding-top: 100px;
+    background: #fff;
+
+    .wrapper {
+      margin: 0 auto;
+      max-width: 1280px;
+    }
+  }
+
+  .timeline {
+    /* margin-bottom: -100px; */
+  }
+
+  .winner-wrapper {
+    margin-top: 40px;
+    display: flex;
+  }
+
+  .winner {
+    display: flex;
+
+    .information {
+      border: 1px solid $default-linecolor;
+      background: #fff;
+
+      h3 {
+        height: 60px;
+        border-bottom: 1px solid $default-linecolor;
+        padding: 0 0 0 60px;
+
+        .place {
+          height: 60px;
+          margin-right: 20px;
+          padding: 0 20px;
+          line-height: 60px;
+          font-weight: bold;
+          display: inline-block;
+          border-right: 1px solid $default-linecolor;
+        }
+      }
+    }
+
+    .entry {
+      flex: 1;
+      height: 200px;
+      background: black;
+    }
+    .information {
+      flex: 1;
+    }
+
+    &.second-place,
+    &.third-place {
+      flex: 1;
+    }
+
+    &.first-place h3 {
+      box-shadow: inset 60px 0 $gold;
+    }
+    &.second-place h3 {
+      box-shadow: inset 60px 0 $silver;
+    }
+    &.third-place h3 {
+      box-shadow: inset 60px 0 $bronze;
+    }
+  }
 }
 
 
@@ -24,8 +100,12 @@
     background: white;
 
     h3 {
-      padding-left: 90px;
+      height: 80px;
+      padding-left: 100px;
       position: relative;
+      font-size: 20px;
+      line-height: 45px;
+      border-bottom: 1px solid $default-linecolor;
       font-weight: bold;
 
       &:before {
@@ -40,6 +120,10 @@
       }
     }
 
+    .content {
+      padding: 25px;
+    }
+
     &.first-place h3 {
       color: $gold;
     }
@@ -52,7 +136,12 @@
   }
 }
 
-
+.login-section {
+  margin: 0;
+  padding: 0 0 32px 0;
+  text-align: center;
+  background: $default-bg;
+}
 
 .weekassignment {
   .half {
