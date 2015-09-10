@@ -20,3 +20,34 @@ var countdown = function() {
 function loadCountDown() {
   window.setInterval(countdown, 1000);
 };
+
+
+$(function() {
+
+  $('.menu-button').on('click', function(event){
+    if ($('body').hasClass('navigation-open')) {
+      $('body').removeClass('navigation-open');
+    }
+    else {
+      $('body').addClass('navigation-open');
+    }
+  });
+
+  $('.mobile.open .close').on('click', function(event){
+    $('body').removeClass('navigation-open');
+  });
+
+
+
+  /* change logo when scrolling */
+
+  $(document).on('scroll', function(event) {
+    if ($(document).scrollTop() > 100) {
+      $('body').addClass('small-logo');
+    }
+    else {
+      $('body').removeClass('small-logo');
+    }
+    console.log($(document).scrollTop());
+  })
+});
