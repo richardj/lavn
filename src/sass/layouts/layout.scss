@@ -16,7 +16,6 @@ body {
 }
 
 body {
-  padding-top: 100px;
   background: $default-bg;
 }
 
@@ -59,7 +58,6 @@ body {
  */
 
 .jumbotron {
-  width: 95%;
   height: 80vh;
   margin: 0 auto;
   position: relative;
@@ -114,8 +112,6 @@ body {
       margin: 9px;
       padding: 10px;
       color: $default-textcolor;
-      background: #f7f7f7;
-      background-image: repeating-linear-gradient(135deg, transparent, transparent 1px, rgba(255,255,255,.5) 1px, rgba(255,255,255,.5) 10px);
     }
 
     h3 {
@@ -123,7 +119,6 @@ body {
       margin-bottom: 1rem;
       padding-left: 70px;
       position: relative;
-      color: #fff;
       font-weight: 700;
       line-height: 30px;
       color: $green;
@@ -174,9 +169,12 @@ body {
       box-shadow: 0 5px 10px rgba(0,0,0,.5);
       border-color: $green;
       flex: 2;
-      color: #fff;
       position: relative;
       background: $green;
+
+      p {
+        color: #fff;
+      }
 
       footer {
         width: 100%;
@@ -231,6 +229,7 @@ body {
     .counter {
       /*text-align: center;*/
       display: flex;
+      color: $default-textcolor;
       justify-content: space-between;
       text-transform: uppercase;
 
@@ -339,7 +338,7 @@ article {
 
 .post-section {
   position: absolute;
-  left: 72%;
+  left: 0;
 
   h2 {
     margin-bottom: 1rem;
@@ -356,10 +355,10 @@ article {
 #how-does-it-work {
   position: relative;
 
-  .left {
+  .right {
     flex: 50;
     max-width: 66%;
-    padding: 40px 300px 40px 40px;
+    padding: 40px 40px 40px 300px;
     border: 1px solid $default-linecolor;
     background: #fff;
 
@@ -378,12 +377,12 @@ article {
     left: 72%;
   }
 
-  .right {
+  .left {
     margin: 5rem 0;
     flex: 25;
 
-    .pull-left {
-      margin-left: -300px;
+    .pull-right {
+      margin-right: -250px;
     }
   }
 }
