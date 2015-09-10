@@ -2,6 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="MobileOptimized" content="width" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>Leukste amateurclub van Nederland</title>
   <link rel="stylesheet" href="css/base.css">
 </head>
@@ -52,7 +56,7 @@
             Bekijk <a href="#">hier</a> snel wat je moet doen om jouw club leuke prijzen te laten winnen.
           </p>
           <footer>
-            <p class="counter" id="countdown">
+            <div class="counter" id="countdown">
               <span class="days">
                 <strong>03</strong>
                 Dagen
@@ -69,7 +73,7 @@
                 <strong>14</strong>
                 Seconden
               </span>
-            </p>
+            </div>
           </footer>
         </div>
       </div>
@@ -98,7 +102,7 @@
 
       </div>
       <div class="information">
-        <h3><span class="place">1e plaats</span> <span class="entry-by"> ingezonden door Koen Post</span></h3>
+        <h3><span class="place">1e plaats</span></h3>
         <div class="content">
           <img src="#" alt="clublogo" />
           <h4>Clubnaam</h4>
@@ -117,6 +121,7 @@
             <h4>Clubnaam</h4>
             <h5>Clubplaats</h5>
           </div>
+          <span class="entry-by"> ingezonden door Koen Post</span>
         </div>
       </div>
       <div class="winner third-place">
@@ -130,6 +135,7 @@
             <h4>Clubnaam</h4>
             <h5>Clubplaats</h5>
           </div>
+          <span class="entry-by"> ingezonden door Koen Post</span>
         </div>
       </div>
     </div>
@@ -199,6 +205,7 @@
     </div>
   </footer>
 
+  <script src="./scripts/jquery.min.js"></script>
   <script src="./scripts/angular.min.js"></script>
   <script src="./scripts/project.js"></script>
 </body>
