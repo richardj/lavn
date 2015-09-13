@@ -3,6 +3,11 @@
 /* mobile navigation */
 
 @media screen and (max-width: 800px) {
+
+  .branding {
+    background: url('../img/LAVN_medium.svg') no-repeat 50% 50%;
+  }
+
   .menu-button {
     position: absolute;
     z-index: 100000;
@@ -84,6 +89,20 @@
   }
 
 
+  .jumbotron {
+    height: 100vh;
+
+    .introduction {
+       max-width: 100%;
+       top: 50%;
+    }
+
+    .btn {
+      text-align: center;
+    }
+  }
+
+
   /*
    * timeline
    */
@@ -93,6 +112,26 @@
         display: none;
       }
     } 
+
+    #how-does-it-work {
+      flex-direction: column;
+
+      h2 {
+        left: 0;
+      }
+
+      .left .pull-right {
+        margin-right: 0;
+      }
+      .right {
+        max-width: 100%;
+        padding: 40px;
+      }
+    }
+
+    .post-section .block {
+      margin-top: 20px;
+    }
 
 }
 

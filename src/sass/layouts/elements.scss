@@ -87,7 +87,7 @@ a.btn {
   /* solids */
   &.solid {
     color: #fff;
-    background: red;
+    background: #f1f1f1;
     box-shadow: inset 6px 0 0;
   }
 
@@ -98,6 +98,10 @@ a.btn {
   &.solid.purple {
     background: $purple;
     box-shadow: inset 6px 0 0 $purple-accent;
+  }
+  &.solid.orange {
+    background: $orange;
+    box-shadow: inset 6px 0 0 $orange-accent;
   }
 
 

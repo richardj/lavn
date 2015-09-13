@@ -81,8 +81,8 @@ body {
     p {
       padding: 10px;
       color: white;
+      font-size: 21px;
       display: inline-block;
-      background: black;
     }
   }
 }
@@ -260,10 +260,7 @@ article {
 /*
  * Frontpage featured
  */
-
 #featured {
-  background: url('../img/bg/background-featured.png') no-repeat 100% 100%;
-  background-attachment: fixed;
 
   .content-wrapper {
     max-width: 1100px;
