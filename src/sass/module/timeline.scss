@@ -1,0 +1,162 @@
+@import '../helpers/variables';
+
+/*
+ * Week timeline
+ */
+
+.timeline {
+  margin-top: -100px;
+  margin-bottom: 85px;
+  display: flex;
+  justify-content: space-between;
+
+  .week {
+    flex-basis: 23%;
+    border: 1px solid $default-linecolor;
+    z-index: 10;
+    background: white;
+
+    .content {
+      margin: 17px;
+    }
+
+    .locked {
+      height: 132px;
+      margin: 9px;
+      padding: 10px;
+      color: $default-textcolor;
+    }
+
+    h3 {
+      height: 60px;
+      margin-bottom: 1rem;
+      padding-left: 70px;
+      position: relative;
+      font-weight: 700;
+      line-height: 30px;
+      color: $green;
+      background: #fff;
+      text-transform: uppercase;
+      border-bottom: 1px solid $default-linecolor;
+      box-shadow: inset 60px 0 0 $default-bg;
+
+      &:before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        top: 20px;
+        left: 20px;
+        position: absolute;
+        background: url('../img/icons/week-locked.svg') no-repeat 0 0;
+      }
+    }
+    h4 {
+      text-align: center;
+    }
+    &.ended {
+      padding: 0;
+      h3 {
+        position: relative;
+        box-shadow: inset 60px 0 0 $green-accent;
+        /* transition: box-shadow 0.13s ease-in; */
+
+        &:hover {
+          /* box-shadow: inset 30rem 0 0 $green-accent; */
+        }
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        &:before {
+          top: 20px;
+          left: 20px;
+          background: url('../img/icons/week-ended.svg') no-repeat 0 0;
+        }
+      }
+    }
+    &.current {
+      padding: 0 0 50px 0;
+      margin: -25px -1px;
+      z-index: 15;
+      box-shadow: 0 5px 10px rgba(0,0,0,.5);
+      border-color: $green;
+      flex: 2;
+      position: relative;
+      background: $green;
+
+      p {
+        color: #fff;
+      }
+
+      footer {
+        width: 100%;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        color: $default-textcolor;
+        background: #fff;
+      }
+
+      a {
+        color: #fff;
+      }
+
+      h3 {
+        height: 60px;
+        margin: -1px -1px 1rem -1px;
+        position: relative;
+        color: #fff;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        border-bottom: none;
+        background: $green;
+        box-shadow: inset 60px 0 0 $green-accent;
+        transition: box-shadow 0.13s ease-in;
+
+        &:hover {
+          box-shadow: inset 30rem 0 0 $green-accent;
+        }
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+        &:before {
+          top: 10px;
+          left: 17px;
+          background: url('../img/icons/week-current.svg') no-repeat 0 0;
+        }
+      }
+    }
+
+    &:last-child {
+      border-left: none;
+    }
+
+    &.closed {
+      background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.5) 1px, rgba(255,255,255,.5) 2px);
+    }
+
+    /* counter */
+    .counter {
+      /*text-align: center;*/
+      display: flex;
+      color: $default-textcolor;
+      justify-content: space-between;
+      text-transform: uppercase;
+
+      span {
+        margin: 16px 0 10px;
+        padding: 0 16px;
+        font-size: 10px;
+        display: inline-block;
+      }
+      strong {
+        font-weight: bold;
+        display: block;
+        font-size: 24px;
+      }
+    }
+  }
+}

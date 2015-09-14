@@ -87,166 +87,6 @@ body {
   }
 }
 
-/*
- * Week timeline
- */
-
-.timeline {
-  margin-top: -100px;
-  margin-bottom: 85px;
-  display: flex;
-  justify-content: space-between;
-
-  .week {
-    flex-basis: 23%;
-    border: 1px solid $default-linecolor;
-    z-index: 10;
-    background: white;
-
-    .content {
-      margin: 17px;
-    }
-
-    .locked {
-      height: 132px;
-      margin: 9px;
-      padding: 10px;
-      color: $default-textcolor;
-    }
-
-    h3 {
-      height: 60px;
-      margin-bottom: 1rem;
-      padding-left: 70px;
-      position: relative;
-      font-weight: 700;
-      line-height: 30px;
-      color: $green;
-      background: #fff;
-      text-transform: uppercase;
-      border-bottom: 1px solid $default-linecolor;
-      box-shadow: inset 60px 0 0 $default-bg;
-
-      &:before {
-        content: "";
-        width: 50px;
-        height: 50px;
-        top: 20px;
-        left: 20px;
-        position: absolute;
-        background: url('../img/icons/week-locked.svg') no-repeat 0 0;
-      }
-    }
-    h4 {
-      text-align: center;
-    }
-    &.ended {
-      padding: 0;
-      h3 {
-        position: relative;
-        box-shadow: inset 60px 0 0 $green-accent;
-        /* transition: box-shadow 0.13s ease-in; */
-
-        &:hover {
-          /* box-shadow: inset 30rem 0 0 $green-accent; */
-        }
-        a {
-          color: #fff;
-          text-decoration: none;
-        }
-
-        &:before {
-          top: 20px;
-          left: 20px;
-          background: url('../img/icons/week-ended.svg') no-repeat 0 0;
-        }
-      }
-    }
-    &.current {
-      padding: 0 0 50px 0;
-      margin: -25px -1px;
-      z-index: 15;
-      box-shadow: 0 5px 10px rgba(0,0,0,.5);
-      border-color: $green;
-      flex: 2;
-      position: relative;
-      background: $green;
-
-      p {
-        color: #fff;
-      }
-
-      footer {
-        width: 100%;
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        color: $default-textcolor;
-        background: #fff;
-      }
-
-      a {
-        color: #fff;
-      }
-
-      h3 {
-        height: 60px;
-        margin: -1px -1px 1rem -1px;
-        position: relative;
-        color: #fff;
-        font-weight: 700;
-        line-height: 30px;
-        text-transform: uppercase;
-        border-bottom: none;
-        background: $green;
-        box-shadow: inset 60px 0 0 $green-accent;
-        transition: box-shadow 0.13s ease-in;
-
-        &:hover {
-          box-shadow: inset 30rem 0 0 $green-accent;
-        }
-        a {
-          color: #fff;
-          text-decoration: none;
-        }
-        &:before {
-          top: 10px;
-          left: 17px;
-          background: url('../img/icons/week-current.svg') no-repeat 0 0;
-        }
-      }
-    }
-
-    &:last-child {
-      border-left: none;
-    }
-
-    &.closed {
-      background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.5) 1px, rgba(255,255,255,.5) 2px);
-    }
-
-    /* counter */
-    .counter {
-      /*text-align: center;*/
-      display: flex;
-      color: $default-textcolor;
-      justify-content: space-between;
-      text-transform: uppercase;
-
-      span {
-        margin: 16px 0 10px;
-        padding: 0 16px;
-        font-size: 10px;
-        display: inline-block;
-      }
-      strong {
-        font-weight: bold;
-        display: block;
-        font-size: 24px;
-      }
-    }
-  }
-}
 
 article {
   &.placeholder {
@@ -261,9 +101,8 @@ article {
  * Frontpage featured
  */
 #featured {
-
   .content-wrapper {
-    max-width: 1100px;
+    max-width: 1280px;
   }
 
   h2 {
@@ -280,12 +119,18 @@ article {
       position: absolute;
       bottom: 0;
       left: 0;
-      background: white;
+      background: $orange;
+
+      p {
+        color: #fff;
+      }
     }
 
     h3 {
-      padding-left: 50px;
+      padding-left: 40px;
       position: relative;
+      color: #fff;
+      font-weight: bold;
       background: url('../img/icons/logo-ing.png') no-repeat 100% 11px;
     }
     h3:before {
@@ -327,8 +172,18 @@ article {
       display: inline-block;
       height: 200px;
     }
-    article:nth-child(1n+2) {
-      width: 49.65%;
+
+    /* test css, remove after */
+    article:nth-child(even) {
+      background: red;
+    } 
+  }
+
+  .row {
+    display: flex;
+
+    article {
+      flex: 1;
     }
   }
 }
@@ -346,8 +201,6 @@ article {
     margin-top: -20%;
   }
 }
-
-
 
 #how-does-it-work {
   position: relative;
@@ -382,6 +235,51 @@ article {
       margin-right: -250px;
     }
   }
+
+
+  .list {
+    list-style: none;
+    padding: 0;
+    
+    
+    li {
+      position: relative;
+      margin-left: 2rem;
+    }
+    
+    li span {
+      width: 60px;
+      height: 60px;
+      background: #fff;
+      position: absolute;
+      text-align: center;
+      border-radius: 50%;
+      line-height: 55px;
+      left: -1.5rem;
+      color: #ff6600;
+      font-size: 28px;
+      font-weight: bold;
+      display: inline-block;
+      box-shadow: 0 0 0 6px #F6F5EF;
+      border: 3px solid #ff6600;
+      background: white;
+      
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 200px;
+        width: 6px;
+        left: 50%;
+        top: 60px;
+        margin-left: -3px;
+        background: #F6F5EF;
+      }
+    }
+    li:last-child span:after {
+      display: none;
+    }
+  }
 }
 
 .before-bg {
@@ -397,6 +295,7 @@ article {
 
 .jury {
   display: flex;
+  flex-wrap: wrap;
 
   .member {
     flex: 1;
@@ -414,16 +313,27 @@ article {
       position: absolute;
       bottom: -60px;
       text-transform: uppercase;
-      background: $green;
-      box-shadow: inset 60px 0 0 $green-accent;
+      background: $orange;
+      box-shadow: inset 60px 0 0 $orange-accent;
       transition: box-shadow 0.13s ease-in;
 
       &:hover {
-        box-shadow: inset 24rem 0 0 $green-accent;
+        box-shadow: inset 24rem 0 0 $orange-accent;
       }
       a {
         color: #fff;
         text-decoration: none;
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        background: url('../img/icons/jury-icon.svg') no-repeat 0 0;
       }
     }
     &.ruud .picture {
@@ -451,7 +361,6 @@ article {
 
 
 footer[role="document-footer"] {
-  height: 95px;
   background: white;
 
   .wrapper {
@@ -460,16 +369,29 @@ footer[role="document-footer"] {
     margin: 0 auto;
   }
   nav {
+    margin-bottom: 40px;
     padding-top: 40px;
+    text-align: center;
   }
 
   a {
     color: #000;
   }
-  .partners {
-    position: absolute;
-    top: 40px;
-    right: 0;
+}
+
+@media screen and (min-width: 880px) {
+  footer[role="document-footer"] {
+    height: 95px;
+
+    nav {
+      text-align: left;
+    }
+
+    .partners {
+      position: absolute;
+      top: 20px;
+      right: 0;
+    }
   }
 }
 

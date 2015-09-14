@@ -6,14 +6,34 @@
   position: fixed;
   top: 50%;
   left: 50%;
+  width: 1080px;
+  margin-top: -25vh;
+  margin-left: -540px;
+  height: 50vh;
+  border: 1px solid $default-linecolor;
+  z-index: 10000;
+  background: $default-bg;
 }
 
 .modal {
   position: relative;
+  display: flex;
   /* close button */
   .close {
     right: 10px;
     top: 10px;
     position: absolute;
   }
+
+  .half {
+    height: 50vh;
+    padding: 29px 10px 28px 39px;
+    flex: 1;
+  }
+
+  .right {
+    padding-right: 41px;
+    background: white;
+  }
 }
+

@@ -121,23 +121,10 @@ a.btn {
   }
 }
 
-
-
-
-
-
-/*
- * Form elements
- */
-
-
-input[type="text"],
-input[type="email"],
-input[type="search"],
-input[type="password"] {
-  font-size: 1rem;
-
+input.btn {
+  border: none;
 }
+
 
 /*
 

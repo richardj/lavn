@@ -5,7 +5,6 @@
  */
 
 .weekassignment {
-
   .jumbotron {
     height: 25vh;
     background-image: none;
@@ -136,18 +135,33 @@
   }
 }
 
-.login-section {
-  margin: 0;
-  padding: 0 0 32px 0;
-  text-align: center;
+.container.login-section {
+  margin: 60px 0 60px 20px;
   background: $default-bg;
 }
 
 .weekassignment {
+  h1 {
+    margin-bottom: 1rem;
+    color: $orange;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
   .half {
     max-width: 66%;
-    padding: 40px 300px 40px 40px;
+    margin-left: 33%;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    padding: 40px 40px 450px 222px;
     border: 1px solid $default-linecolor;
     background: #fff;
+
+    article {
+      width: 90vh;
+      position: absolute;
+      margin-top: 32px;
+      margin-left: -400px;
+    }
   }
 }

@@ -11,6 +11,33 @@
 </head>
 
 <body ng-app="lavn">
+
+  <div class="modal-wrapper">
+    <div class="modal">
+      <div class="half left">
+      </div>
+      <div class="half right">
+        <button class="close">Close</button>
+
+        <form>
+          <label>Kies jouw club</label>
+          <input type="text" placeholder="Zoek jouw club op naam en plaats" class="search" />
+
+          <label>Naam</label>
+          <input type="text" placeholder="vul je naam in" />
+
+          <label>
+            Wat is jouw clubdroom? 
+            <span>Wat zou je doen met €20.000 voor jouw club?</span>
+          </label>
+          <textarea></textarea>
+
+          <input type="submit" class="btn solid orange right" value="Volgende" />
+        </form>
+      </div>
+    </div>
+  </div>
+
   <button class="menu-button">Open Menu</button>
   <nav role="main-navigation" class="mobile open">
     <span class="close">X</span>
@@ -112,34 +139,40 @@
         <h2>Hoe werkt het</h2>
         <div class="half left">
           <div class="pull-right">
-            <div style="background: black; width: 100%; height: 380px;" class="video placeholder"></div>
+            <div style="background: black; width: 100%; height: 240px;" class="video placeholder"></div>
           </div>
         </div>
         <div class="half right">
-          <ul>
+          <ul class="list">
             <li>
-              <h3>1. Meld je aan en vind jouw clubpagina</h3>
+              <span>1</span>
+              <div class="content">
+                <h3>Meld je aan en vind jouw clubpagina</h3>
+                <p>
+                  Integer varius tempor mi vel placerat. Donec facilisis ex et mi auctor, eu congue ligula tincidunt.
+                  Sed a tellus augue. Cras auctor risus ante, sed euismod ex viverra eget.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>2</span>
+              <h3>Meld je aan en vind jouw clubpagina</h3>
               <p>
                 Integer varius tempor mi vel placerat. Donec facilisis ex et mi auctor, eu congue ligula tincidunt.
                 Sed a tellus augue. Cras auctor risus ante, sed euismod ex viverra eget.
               </p>
             </li>
             <li>
-              <h3>2. Meld je aan en vind jouw clubpagina</h3>
+              <span>3</span>
+              <h3>Meld je aan en vind jouw clubpagina</h3>
               <p>
                 Integer varius tempor mi vel placerat. Donec facilisis ex et mi auctor, eu congue ligula tincidunt.
                 Sed a tellus augue. Cras auctor risus ante, sed euismod ex viverra eget.
               </p>
             </li>
             <li>
-              <h3>3. Meld je aan en vind jouw clubpagina</h3>
-              <p>
-                Integer varius tempor mi vel placerat. Donec facilisis ex et mi auctor, eu congue ligula tincidunt.
-                Sed a tellus augue. Cras auctor risus ante, sed euismod ex viverra eget.
-              </p>
-            </li>
-            <li>
-              <h3>4. Meld je aan en vind jouw clubpagina</h3>
+              <span>4</span>
+              <h3>Meld je aan en vind jouw clubpagina</h3>
               <p>
                 Integer varius tempor mi vel placerat. Donec facilisis ex et mi auctor, eu congue ligula tincidunt.
                 Sed a tellus augue. Cras auctor risus ante, sed euismod ex viverra eget.
@@ -171,8 +204,10 @@
 
         <div class="half">
           <article class="placeholder">larger</article>
-          <article class="placeholder">smaller</article>
-          <article class="placeholder">smaller</article>
+          <div class="row">
+            <article class="placeholder">smaller</article>
+            <article class="placeholder">smaller</article>
+          </div>
         </div>
       </div>
     </section>
@@ -211,7 +246,7 @@
         <nav>
           <a href="#">Gebruikersvoorwaarden</a> -
           <a href="#">Privacy policy</a> -
-          <a href="#">Cookie policy</a> -
+          <a href="#">Cookie policy</a>
         </nav>
 
         <p class="partners">
