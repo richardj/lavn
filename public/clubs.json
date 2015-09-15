@@ -1,0 +1,33 @@
+{
+  "clubs": [ 
+  {
+    "id": 1234,
+    "name": "FC Purmerend",
+    "city": "Purmerend",
+    "founded": 1992,
+    "members": 123
+  },
+  {
+    "id": 1436,
+    "name": "Leeuwarder Zwaluwen",
+    "city": "Leewarden",
+    "founded": 1981,
+    "members": 100
+  },
+  {
+    "id": 13879,
+    "name": "Vroomshopse Boys",
+    "city": "Vroom",
+    "founded": 1922,
+    "members": 800
+  },
+  {
+    "id": 897,
+    "name": "A.W.C. Wijchen",
+    "city": "Wijchen",
+    "founded": 1964,
+    "members": 657
+  }
+
+  ]
+}

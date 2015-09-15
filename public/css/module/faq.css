@@ -1,0 +1,29 @@
+/* #86b918 */
+/* #6b9413 */
+/* #6d1f80 */
+/* #490859 */
+/* ff6600 */
+/* ce5200 */
+/* #55513b */
+/* #85805f */
+/* #b4b197 */
+/* #dddcd1 */
+/* f6f5ef */
+/* beb16c */
+/* 989898 */
+/* 956B3F */
+/* line 15, stdin */
+.questions-answer {
+  background: grey; }
+
+/* line 17, stdin */
+.questions-answer h2 {
+  margin-bottom: 1rem; }
+
+/* line 19, stdin */
+.questions-answer .answer {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  background: light-grey; }
+
+/*# sourceMappingURL=../maps/module/faq.css.map */

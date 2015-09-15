@@ -1,0 +1,39 @@
+/* ff6600 */
+/* default background color */
+/* F6F5EF */
+/* #DDDCD1 */
+/* #55513B */
+/* beb16c */
+/* 989898 */
+/* 956B3F */
+/* 283b73 */
+/* ffbc00 */
+/* f6f8f8 */
+/*
+ * Card layout
+ */
+/* line 15, stdin */
+.card {
+  margin-bottom: 10px;
+  padding: 20px;
+  display: inline-block;
+  font-weight: 300;
+  border-radius: 3px;
+  font-size: 14px;
+  border: 1px solid #CBDDE3;
+  background: #fff; }
+
+/* line 24, stdin */
+.card.attention {
+  border: 2px solid #DB6755; }
+
+/* line 26, stdin */
+.card .description {
+  margin-bottom: 1em; }
+
+/* line 29, stdin */
+.card.textarea {
+  padding: 0;
+  width: 100%; }
+
+/*# sourceMappingURL=../maps/module/card.css.map */

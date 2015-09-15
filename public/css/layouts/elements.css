@@ -1,0 +1,233 @@
+/* #86b918 */
+/* #6b9413 */
+/* #6d1f80 */
+/* #490859 */
+/* ff6600 */
+/* ce5200 */
+/* #55513b */
+/* #85805f */
+/* #b4b197 */
+/* #dddcd1 */
+/* f6f5ef */
+/* beb16c */
+/* 989898 */
+/* 956B3F */
+/*
+ * 16px = 1rem
+ */
+/* line 18, stdin */
+html {
+  font-size: 14px; }
+
+/* line 21, stdin */
+h1 {
+  font-weight: 700;
+  font-size: 2.25rem; }
+
+/* line 25, stdin */
+h2 {
+  padding: 1em 0;
+  font-weight: 300;
+  font-size: 1.714rem; }
+
+/* line 30, stdin */
+h3 {
+  padding: 1em 0;
+  font-weight: 300;
+  font-size: 1.25rem; }
+
+/* line 35, stdin */
+p {
+  font-size: 1rem;
+  color: #55513b; }
+
+/* line 39, stdin */
+a {
+  color: #ff6600; }
+
+/*
+ * Buttons
+ */
+/* line 45, stdin */
+a.btn {
+  text-decoration: none; }
+
+/* line 48, stdin */
+.btn {
+  padding: 10px 30px 10px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: box-shadow 0.13s ease-in, padding 0.13s ease-in;
+  transition: box-shadow 0.13s ease-in, padding 0.13s ease-in;
+  /* color values */
+  /* solids */
+  /* hover states */ }
+
+/* line 59, stdin */
+.btn:before {
+  content: "<";
+  position: absolute;
+  font-weight: bold;
+  top: 9px;
+  left: 12px;
+  -webkit-transition: color 0.13s ease-in;
+  transition: color 0.13s ease-in; }
+
+/* line 67, stdin */
+.btn:not(.solid):hover:before {
+  color: white; }
+
+/* line 69, stdin */
+.btn.green {
+  color: #86b918; }
+
+/* line 71, stdin */
+.btn.purple {
+  color: #6d1f80; }
+
+/* line 73, stdin */
+.btn.orange {
+  color: #ff6600; }
+
+/* line 75, stdin */
+.btn.solid {
+  color: #fff;
+  background: #f1f1f1;
+  box-shadow: inset 6px 0 0; }
+
+/* line 79, stdin */
+.btn.solid.green {
+  background: #86b918;
+  box-shadow: inset 6px 0 0 #6b9413; }
+
+/* line 82, stdin */
+.btn.solid.purple {
+  background: #6d1f80;
+  box-shadow: inset 6px 0 0 #490859; }
+
+/* line 85, stdin */
+.btn.solid.orange {
+  background: #ff6600;
+  box-shadow: inset 6px 0 0 #ce5200; }
+
+/* line 88, stdin */
+.btn:hover {
+  padding: 10px 12px 10px 50px; }
+
+/* line 90, stdin */
+.btn.green:hover {
+  box-shadow: inset 36px 0 0 #6b9413; }
+
+/* line 92, stdin */
+.btn.purple:hover {
+  box-shadow: inset 36px 0 0 #490859; }
+
+/* line 94, stdin */
+.btn.orange:hover {
+  box-shadow: inset 36px 0 0 #ce5200; }
+
+/* line 97, stdin */
+input.btn {
+  border: none; }
+
+/*
+
+8px = 0.5714rem
+9px = 0.6429rem
+10px = 0.7143rem
+11px = 0.7857rem
+12px = 0.8571rem
+13px = 0.9286rem
+14px = 1rem (base)
+15px = 1.071rem
+16px = 1.143rem
+18px = 1.286rem
+20px = 1.429rem
+22px = 1.571rem
+24px = 1.714rem
+26px = 1.857rem
+28px = 2rem
+30px = 2.143rem
+32px = 2.286rem
+34px = 2.429rem
+36px = 2.571rem
+38px = 2.714rem
+40px = 2.857rem
+
+*/
+/* line 125, stdin */
+.list {
+  list-style: none;
+  padding: 0; }
+
+/* line 128, stdin */
+.list li {
+  position: relative;
+  margin-left: 2rem; }
+
+/* line 131, stdin */
+.list li .content {
+  margin-left: 4rem; }
+
+/* line 133, stdin */
+.list li span {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 55px;
+  left: -1.5rem;
+  color: #ff6600;
+  font-size: 28px;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 0 0 6px #f6f5ef;
+  border: 3px solid #ff6600;
+  background: #fff; }
+
+/* line 148, stdin */
+.list li span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 80px;
+  width: 6px;
+  left: 50%;
+  top: 60px;
+  margin-left: -3px;
+  background: #f6f5ef; }
+
+/* line 158, stdin */
+.list li:last-child span:after {
+  display: none; }
+
+/* line 160, stdin */
+.list.steps li span {
+  border-color: white;
+  color: #b4b197; }
+
+/* line 163, stdin */
+.list.steps li.active span {
+  color: #ff6600;
+  border-color: #ff6600; }
+
+/* line 166, stdin */
+.list.medium li span {
+  width: 40px;
+  height: 40px;
+  font-size: 1.714rem;
+  line-height: 35px; }
+
+/* line 171, stdin */
+.list .content h4 {
+  font-size: 1.286rem;
+  color: #55513b; }
+
+/* line 174, stdin */
+.list .content p {
+  color: #85805f; }
+
+/*# sourceMappingURL=../maps/layouts/elements.css.map */

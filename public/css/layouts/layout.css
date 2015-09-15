@@ -1,0 +1,259 @@
+/* #86b918 */
+/* #6b9413 */
+/* #6d1f80 */
+/* #490859 */
+/* ff6600 */
+/* ce5200 */
+/* #55513b */
+/* #85805f */
+/* #b4b197 */
+/* #dddcd1 */
+/* f6f5ef */
+/* beb16c */
+/* 989898 */
+/* 956B3F */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,600,400);
+/* line 16, stdin */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/* line 19, stdin */
+main[role="main"] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* line 26, stdin */
+html,
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif; }
+
+/* line 30, stdin */
+body {
+  background: #f6f5ef; }
+
+/* line 33, stdin */
+.container-wrapper {
+  width: 100%;
+  padding-top: 240px;
+  box-shadow: inset 0 460px white; }
+
+/* line 37, stdin */
+.container-wrapper.medium {
+  padding-top: 120px;
+  box-shadow: inset 0 275px white; }
+
+/* line 40, stdin */
+.container-wrapper.small {
+  padding-top: 100px;
+  box-shadow: inset 0 200px white; }
+
+/* line 44, stdin */
+.container {
+  max-width: 1280px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  position: relative; }
+
+/* line 50, stdin */
+.container.full {
+  max-width: 100%; }
+
+/* line 52, stdin */
+.container h2 {
+  padding: 4px 10px;
+  color: white;
+  display: inline-block;
+  background: black; }
+
+/* line 57, stdin */
+.container h2.multiline {
+  background: none;
+  padding: 0; }
+
+/* line 60, stdin */
+.container h2.multiline span {
+  padding: 4px 10px;
+  background: black; }
+
+/* line 63, stdin */
+.container h2.multiline span:last-child {
+  margin-top: 10px;
+  display: block; }
+
+/*
+ * Jumbotron default
+ */
+/* line 70, stdin */
+.jumbotron {
+  height: 80vh;
+  margin: 0 auto 270px;
+  position: relative;
+  background: #f6f5ef url("../img/lavn-header.jpg") no-repeat 50% 50%;
+  background-attachment: fixed;
+  background-size: cover; }
+
+/* line 77, stdin */
+.jumbotron .introduction {
+  max-width: 55%;
+  position: absolute;
+  left: 4%;
+  top: 20%; }
+
+/* line 82, stdin */
+.jumbotron .introduction h1 {
+  margin-bottom: .5rem;
+  padding: 10px;
+  font-size: 2rem;
+  display: inline-block;
+  background: white; }
+
+/* line 88, stdin */
+.jumbotron .introduction p {
+  padding: 10px;
+  color: white;
+  font-size: 21px;
+  display: inline-block; }
+
+/* line 94, stdin */
+article.placeholder {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 5px;
+  background: black; }
+
+/*
+ * Content wrapper for content that is a 2 column content 
+ */
+/* line 103, stdin */
+.content-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* line 108, stdin */
+.content-wrapper .half {
+  padding: 5px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+/* line 114, stdin */
+.content-wrapper .half:nth-child(1) {
+  padding-left: 0;
+  padding-right: 20px; }
+
+/* line 117, stdin */
+.content-wrapper .half:nth-child(2) {
+  padding-left: 0; }
+
+/* line 119, stdin */
+.content-wrapper .half:nth-child(2) article {
+  width: 100%;
+  display: inline-block;
+  height: 200px; }
+
+/* line 123, stdin */
+.content-wrapper .half:nth-child(2) .row {
+  margin-top: 20px; }
+
+/* line 125, stdin */
+.content-wrapper .half:nth-child(2) .row article {
+  margin-right: 20px; }
+
+/* line 127, stdin */
+.content-wrapper .half:nth-child(2) .row article:last-child {
+  margin-right: 0; }
+
+/* line 129, stdin */
+.content-wrapper .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* line 134, stdin */
+.content-wrapper .row article {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+/*
+.post-section {
+  position: absolute;
+  left: 0;
+
+  h2 {
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .block {
+    margin-top: -20%;
+  }
+}
+*/
+/* line 155, stdin */
+.before-bg {
+  content: "";
+  width: 150%;
+  left: 0;
+  position: absolute;
+  top: -50%;
+  height: 50vh;
+  background: red;
+  z-index: -1; }
+
+/* line 165, stdin */
+footer[role="document-footer"] {
+  margin-top: 110px;
+  background: white; }
+
+/* line 168, stdin */
+footer[role="document-footer"] .wrapper {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto; }
+
+/* line 172, stdin */
+footer[role="document-footer"] nav {
+  margin-bottom: 40px;
+  padding-top: 40px;
+  text-align: center; }
+
+/* line 176, stdin */
+footer[role="document-footer"] a {
+  color: #000; }
+
+@media screen and (min-width: 880px) {
+  /* line 180, stdin */
+  footer[role="document-footer"] {
+    height: 95px; }
+  /* line 182, stdin */
+  footer[role="document-footer"] nav {
+    text-align: left; }
+  /* line 184, stdin */
+  footer[role="document-footer"] .partners {
+    position: absolute;
+    top: 20px;
+    right: 0; } }
+
+/* line 189, stdin */
+textarea {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  border: none; }
+
+/*# sourceMappingURL=../maps/layouts/layout.css.map */

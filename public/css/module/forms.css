@@ -1,0 +1,52 @@
+/* #86b918 */
+/* #6b9413 */
+/* #6d1f80 */
+/* #490859 */
+/* ff6600 */
+/* ce5200 */
+/* #55513b */
+/* #85805f */
+/* #b4b197 */
+/* #dddcd1 */
+/* f6f5ef */
+/* beb16c */
+/* 989898 */
+/* 956B3F */
+/*
+ * Form elements
+ */
+/* line 21, stdin */
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"] {
+  font-size: 16px; }
+
+/*
+ * login form
+ */
+/* line 27, stdin */
+label {
+  margin-bottom: 7px;
+  display: block;
+  line-height: 18px;
+  font-weight: bold; }
+
+/* line 32, stdin */
+label span {
+  font-weight: normal;
+  display: block; }
+
+/* line 37, stdin */
+input[type="text"],
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px 0 11px 17px;
+  border: 1px solid #55513b; }
+
+/* line 43, stdin */
+form input[type="submit"].right {
+  float: right; }
+
+/*# sourceMappingURL=../maps/module/forms.css.map */

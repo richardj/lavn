@@ -1,0 +1,19 @@
+<svg width="30px" height="31px" viewBox="0 0 30 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <g id="icon-idea" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Home" sketch:type="MSArtboardGroup" transform="translate(-124.000000, -2142.000000)" stroke="#FF6600" stroke-width="2">
+            <g id="Uitgelicht" sketch:type="MSLayerGroup" transform="translate(100.000000, 1702.000000)">
+                <g id="Tip-van-de-week" transform="translate(0.000000, 80.000000)" sketch:type="MSShapeGroup">
+                    <g id="idea" transform="translate(24.000000, 360.000000)">
+                        <path d="M0,15 L2.72727273,15" id="Shape"></path>
+                        <path d="M4.36363636,4.40888889 L6.34090909,6.40666667" id="Shape"></path>
+                        <path d="M15,0 L15,2.75555556" id="Shape"></path>
+                        <path d="M25.6363636,4.40888889 L23.6590909,6.40666667" id="Shape"></path>
+                        <path d="M30,15 L27.2727273,15" id="Shape"></path>
+                        <path d="M23.1818182,15.1555556 C23.1818182,10.6088889 19.5,6.88888889 15,6.88888889 C10.5,6.88888889 6.81818182,10.6088889 6.81818182,15.1555556 C6.81818182,18.7377778 9.06818182,21.8377778 12.2727273,22.94 L12.2727273,26.1777778 L17.7272727,26.1777778 L17.7272727,22.94 C20.9318182,21.8377778 23.1818182,18.7377778 23.1818182,15.1555556 L23.1818182,15.1555556 Z" id="Shape"></path>
+                        <path d="M12.2727273,30 L17.7272727,30" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

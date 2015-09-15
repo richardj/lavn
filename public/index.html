@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="MobileOptimized" content="width" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Leukste amateurclub van Nederland</title>
+  <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body ng-app="lavn" class="front">
+  <div class="overlay"></div>
+  <div class="modal-wrapper">
+    <div class="modal">
+      <div class="half left">
+        <h2>De leukste amateurclub van Nederland</h2>
+          <ul class="list medium steps">
+            <li class="active">
+              <span>1</span>
+              <div class="content">
+                <h3>Kies jouw club</h3>
+              </div>
+            </li>
+            <li>
+              <span>2</span>
+              <div class="content">
+                <h3>Meld je aan en vind jouw clubpagina</h3>
+                <p>
+                  Integer varius tempor mi vel placerat. Donec facilisis ex et mi auctor, eu congue ligula tincidunt.
+                  Sed a tellus augue. Cras auctor risus ante, sed euismod ex viverra eget.
+                </p>
+              </div>
+            </li>
+          </ul>
+      </div>
+      <div class="half right">
+        <button class="close">Close</button>
+
+        <form>
+          <label>Kies jouw club</label>
+          <input type="text" placeholder="Zoek jouw club op naam en plaats" class="search" />
+
+          <label>Naam</label>
+          <input type="text" placeholder="vul je naam in" />
+
+          <label>
+            Wat is jouw clubdroom? 
+            <span>Wat zou je doen met €20.000 voor jouw club?</span>
+          </label>
+          <textarea></textarea>
+
+          <input type="submit" class="btn solid orange right" value="Volgende" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <button class="menu-button">Open Menu</button>
+  <nav role="main-navigation" class="mobile open">
+    <span class="close">X</span>
+    <a href="index.html" class="active">Home</a>
+    <a href="weekassignment.html">Weekopdrachten</a>
+    <a href="#">Zoek een club</a>
+    <a href="#">FAQ</a>
+  </nav>
+
+  <div class="layout-wrapper">
+    <header class="header">
+      <div class="wrapper">
+        <nav role="main-navigation" class="open">
+          <a href="index.html" class="active">Home</a>
+          <a href="weekassignment.html">Weekopdrachten</a>
+          <a href="#">Zoek een club</a>
+          <a href="#">FAQ</a>
+        </nav>
+
+        <div class="branding"><a href="#">Logo</a></div>
+
+        <nav role="user-navigation">
+          <div class="wrapper">
+            <a href="#" class="btn solid green">Doe mee</a>
+            <a href="#" class="btn orange">Login</a>
+          </div>
+        </nav>
+
+        <nav role="user-navigation" class="logged-in">
+          <div class="wrapper">
+            <a href="#" class="clublogo">Mijn club</a>
+            <a href="#">Mijn profiel</a>
+            <a href="#">Uitloggen</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="jumbotron">
+      <article class="introduction">
+        <h1>Win €20.000 voor jouw club</h1>
+        <p>Maak elke week kans op prijzen en een plek in de finale om €20.000 te winnen. Meld je aan, zoek je club, vul de clubdroom in en doe mee met de opdrachten.</p>
+        <a href="#" class="btn solid orange">Doe mee</a> <a href="#" class="btn solid green">Login</a>
+      </article>
+    </section>
+
+    <div class="container-wrapper">
+      <section class="container">
+        <div class="timeline">
+          <div class="week ended">
+            <h3>Weekopdracht 1</h3>
+            <div class="content">
+              <p>
+                De weekopdracht van week 1 is voorbij. <br />
+                De winner is: <strong>S.V. DZC `68</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="week current">
+            <h3><a href="#">Weekopdracht 2</a></h3>
+            <div class="content">
+              <p>
+                Bekijk <a href="#">hier</a> snel wat je moet doen om jouw club leuke prijzen te laten winnen.
+              </p>
+              <footer>
+                <div class="counter" id="countdown">
+                  <span class="days">
+                    <strong>03</strong>
+                    Dagen
+                  </span>
+                  <span class="hours">
+                    <strong>14</strong>
+                    Uur
+                  </span>
+                  <span class="days">
+                    <strong>54</strong>
+                    Minuten
+                  </span>
+                  <span class="days">
+                    <strong>14</strong>
+                    Seconden
+                  </span>
+                </div>
+              </footer>
+            </div>
+          </div>
+
+          <div class="week closed">
+              <h3>Weekopdracht 3</h3>
+            <div class="content locked">
+              <p>Deze opdracht wordt bekendgemaakt op <strong>16 oktober</strong></p>
+            </div>
+          </div>
+
+          <div class="week closed">
+              <h3>Weekopdracht 4</h3>
+            <div class="content locked">
+              <p>Deze opdracht wordt bekendgemaakt op <strong>23 oktober</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-wrapper" id="how-does-it-work">
+          <h2>Hoe werkt het</h2>
+          <div class="half left">
+            <div class="pull-right">
+              <div style="background: black; width: 600px; height: 355px;" class="video placeholder"></div>
+            </div>
+          </div>
+          <div class="half right">
+            <ul class="list">
+              <li>
+                <span>1</span>
+                <div class="content">
+                  <h3>Meld je aan en vind jouw clubpagina</h3>
+                  <p>
+                    Integer varius tempor mi vel placerat. Donec facilisis ex et mi auctor, eu congue ligula tincidunt.
+                    Sed a tellus augue. Cras auctor risus ante, sed euismod ex viverra eget.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span>2</span>
+                <div class="content">
+                <h3>Meld je aan en vind jouw clubpagina</h3>
+                  <p>
+                    Integer varius tempor mi vel placerat. Donec facilisis ex et mi auctor, eu congue ligula tincidunt.
+                    Sed a tellus augue. Cras auctor risus ante, sed euismod ex viverra eget.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span>3</span>
+                <div class="content">
+                  <h3>Meld je aan en vind jouw clubpagina</h3>
+                  <p>
+                    Integer varius tempor mi vel placerat. Donec facilisis ex et mi auctor, eu congue ligula tincidunt.
+                    Sed a tellus augue. Cras auctor risus ante, sed euismod ex viverra eget.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span>4</span>
+                <div class="content">
+                  <h3>Meld je aan en vind jouw clubpagina</h3>
+                  <p>
+                    Integer varius tempor mi vel placerat. Donec facilisis ex et mi auctor, eu congue ligula tincidunt.
+                    Sed a tellus augue. Cras auctor risus ante, sed euismod ex viverra eget.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="post-section" id="post-how-section">
+          <div class="block login">
+            <h2>Win €20.000 voor jouw club</h2>
+            <p>
+              Maak elke week kans op een plek in de finale om €20.000 te winnen. Meld je aan, <br />
+              zoek je club, vul de clubdroom in en doe mee met de opdrachten.
+            </p>
+            <a href="#" class="btn solid green">Doe mee</a> <a href="#" class="btn orange">Login</a>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+
+    <div class="container-wrapper small">
+      <section class="container" id="featured">
+        <h2>Uitgelicht</h2>
+
+        <div class="content-wrapper">
+          <div class="half">
+            <article class="featured-spot placeholder">
+              <header>
+                <h3>ING tip van de week</h3>
+                <p>“Cras ultricies mi eu turpis hendrerit fringilla. Ut non enim eleifend felis pretium feugiat. In auctor lobortis lacus.”</p>
+              </header>
+            </article>
+          </div>
+
+          <div class="half">
+            <article class="placeholder">larger</article>
+            <div class="row">
+              <article class="placeholder">smaller</article>
+              <article class="placeholder">smaller</article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container-wrapper small">
+      <section class="container" id="jury">
+        <h2>De Jury</h2>
+        <div class="jury">
+          <div class="member ruud">
+            <div class="picture">
+              <h3>Ruud van Nistelrooij</h3>
+            </div>
+          </div>
+
+          <div class="member anouk">
+            <div class="picture">
+              <h3>Anouk Hoogendijk</h3>
+            </div>
+          </div>
+
+          <div class="member coen">
+            <div class="picture">
+              <h3>Coen Swijnenberg</h3>
+            </div>
+          </div>
+
+          <div class="member sander">
+            <div class="picture">
+              <h3>Sander Lantinga</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer role="document-footer">
+      <div class="wrapper">
+        <nav>
+          <a href="#">Gebruikersvoorwaarden</a> -
+          <a href="#">Privacy policy</a> -
+          <a href="#">Cookie policy</a>
+        </nav>
+
+        <p class="partners">
+          <a href="http://538.nl" class="partner radio538"><img src="img/icons/logo-538.png" alt="logo radio 538" /></a>
+          <a href="http://ing.nl" class="partner ing"><img src="img/icons/logo-ing.png" alt="logo ING bank" /></a>
+          Mede mogelijk gemaakt door: <a href="http://www.knvb.nl" class="partner knvb"><img src="img/icons/logo-knvb.png" alt="logo KNVB" /></a>
+        </p>
+      </div>
+    </footer>
+
+  </div>
+  <script src="./scripts/jquery.min.js"></script>
+  <script src="./scripts/vex.combined.min.js"></script>
+  <script src="./scripts/angular.min.js"></script>
+  <script src="./scripts/project.js"></script>
+</body>
+</html>

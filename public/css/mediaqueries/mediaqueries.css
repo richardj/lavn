@@ -1,0 +1,160 @@
+/* breakpoints */
+/* mobile navigation */
+@media screen and (max-width: 800px) {
+  /* line 4, stdin */
+  .branding {
+    background: url("../img/LAVN_medium.png") no-repeat 50% 50% !important; }
+  /* line 6, stdin */
+  .menu-button {
+    position: absolute;
+    z-index: 100000;
+    margin: 1em;
+    padding: 0;
+    width: 2.5em;
+    height: 2.25em;
+    overflow: hidden;
+    border: none;
+    text-indent: 2.5em;
+    font-size: 1.5em;
+    color: transparent;
+    background: transparent; }
+  /* line 19, stdin */
+  .menu-button:before {
+    content: "";
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    bottom: 0.5em;
+    left: 0.5em;
+    background: -webkit-linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
+    background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%); }
+  /* line 28, stdin */
+  nav[role="main-navigation"] {
+    display: none; }
+  /* line 30, stdin */
+  nav[role="main-navigation"].mobile {
+    display: block;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.23s ease-in;
+    transition: transform 0.23s ease-in; }
+  /* line 37, stdin */
+  nav[role="main-navigation"].mobile a {
+    display: block; }
+  /* line 39, stdin */
+  nav[role="main-navigation"].mobile .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer; }
+  /* line 44, stdin */
+  nav[role="main-navigation"].mobile.open {
+    height: 100%;
+    padding: 4rem 2rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000; }
+  /* line 51, stdin */
+  nav[role="main-navigation"].mobile.open a {
+    margin: 1rem 0;
+    display: block;
+    font-size: 2rem; }
+  /* line 55, stdin */
+  .layout-wrapper {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: -webkit-transform 0.23s ease-in;
+    transition: transform 0.23s ease-in; }
+  /* line 61, stdin */
+  .navigation-open nav[role="main-navigation"].mobile {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+  /* line 65, stdin */
+  .navigation-open .layout-wrapper {
+    -webkit-transform: translateX(90%);
+    -ms-transform: translateX(90%);
+    transform: translateX(90%);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.25); }
+  /* line 70, stdin */
+  .jumbotron {
+    height: 100vh; }
+  /* line 72, stdin */
+  .jumbotron .introduction {
+    max-width: 100%;
+    top: 50%; }
+  /* line 75, stdin */
+  .jumbotron .btn {
+    text-align: center; }
+  /*
+   * timeline
+   */
+  /* line 81, stdin */
+  .timeline .week.ended,
+  .timeline .week.closed {
+    display: none; }
+  /* line 83, stdin */
+  #how-does-it-work {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  /* line 89, stdin */
+  #how-does-it-work h2 {
+    left: 0; }
+  /* line 91, stdin */
+  #how-does-it-work .left .pull-right {
+    margin-right: 0; }
+  /* line 93, stdin */
+  #how-does-it-work .right {
+    max-width: 100%;
+    margin: 0 20px;
+    padding: 40px 40px 40px 140px; }
+  /* line 97, stdin */
+  .post-section .block {
+    margin-top: 20px; }
+  /* line 99, stdin */
+  #featured .content-wrapper {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  /* line 106, stdin */
+  .jury .member {
+    margin-bottom: 60px;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; } }
+
+@media screen and (max-width: 1200px) {
+  /* line 113, stdin */
+  .jury .member h3 {
+    line-height: 1.4rem;
+    font-size: 1rem; } }
+
+@media screen and (min-width: 800px) {
+  /* line 118, stdin */
+  nav[role="main-navigation"].mobile {
+    display: none; } }
+
+/* 880px */
+/*
+ * It seems that at 880px a lot of the blocks don't have enough space anymore so we break there 
+ */
+@media screen and (min-width: 880px) {
+  /* line 126, stdin */
+  .jumbotron {
+    width: 100%; } }
+
+@media screen and (min-width: 1280px) {
+  /* line 130, stdin */
+  .jumbotron {
+    width: 95%; } }
+
+/*# sourceMappingURL=../maps/mediaqueries/mediaqueries.css.map */

@@ -1,0 +1,200 @@
+/* #86b918 */
+/* #6b9413 */
+/* #6d1f80 */
+/* #490859 */
+/* ff6600 */
+/* ce5200 */
+/* #55513b */
+/* #85805f */
+/* #b4b197 */
+/* #dddcd1 */
+/* f6f5ef */
+/* beb16c */
+/* 989898 */
+/* 956B3F */
+/*
+ * Week timeline
+ */
+/* line 18, stdin */
+.timeline {
+  margin-top: -100px;
+  margin-bottom: 85px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+/* line 29, stdin */
+.timeline .week {
+  -webkit-flex-basis: 23%;
+  -ms-flex-preferred-size: 23%;
+  flex-basis: 23%;
+  border: 1px solid #dddcd1;
+  z-index: 10;
+  background: white;
+  /* counter */ }
+
+/* line 37, stdin */
+.timeline .week .content {
+  margin: 17px; }
+
+/* line 39, stdin */
+.timeline .week .locked {
+  height: 132px;
+  margin: 9px;
+  padding: 10px;
+  color: #55513b; }
+
+/* line 44, stdin */
+.timeline .week h3 {
+  height: 60px;
+  margin-bottom: 1rem;
+  padding-left: 70px;
+  position: relative;
+  font-weight: 700;
+  line-height: 30px;
+  color: #86b918;
+  background: #fff;
+  text-transform: uppercase;
+  border-bottom: 1px solid #dddcd1;
+  box-shadow: inset 60px 0 0 #f6f5ef; }
+
+/* line 56, stdin */
+.timeline .week h3:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  left: 20px;
+  position: absolute;
+  background: url("../img/icons/week-locked.svg") no-repeat 0 0; }
+
+/* line 64, stdin */
+.timeline .week p {
+  color: #b4b197; }
+
+/* line 66, stdin */
+.timeline .week.ended {
+  padding: 0; }
+
+/* line 68, stdin */
+.timeline .week.ended h3 {
+  position: relative;
+  box-shadow: inset 60px 0 0 #6b9413; }
+
+/* line 71, stdin */
+.timeline .week.ended h3 a {
+  color: #fff;
+  text-decoration: none; }
+
+/* line 74, stdin */
+.timeline .week.ended h3:before {
+  top: 20px;
+  left: 20px;
+  background: url("../img/icons/week-ended.svg") no-repeat 0 0; }
+
+/* line 78, stdin */
+.timeline .week.current {
+  padding: 0 0 50px 0;
+  margin: -25px -1px;
+  z-index: 15;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  border-color: #86b918;
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  position: relative;
+  background: #86b918; }
+
+/* line 90, stdin */
+.timeline .week.current p {
+  color: #fff; }
+
+/* line 92, stdin */
+.timeline .week.current footer {
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  color: #55513b;
+  background: #fff; }
+
+/* line 99, stdin */
+.timeline .week.current a {
+  color: #fff; }
+
+/* line 101, stdin */
+.timeline .week.current h3 {
+  height: 60px;
+  margin: -1px -1px 1rem -1px;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  border-bottom: none;
+  background: #86b918;
+  box-shadow: inset 60px 0 0 #6b9413;
+  -webkit-transition: box-shadow 0.13s ease-in;
+  transition: box-shadow 0.13s ease-in; }
+
+/* line 114, stdin */
+.timeline .week.current h3:hover {
+  box-shadow: inset 30rem 0 0 #6b9413; }
+
+/* line 116, stdin */
+.timeline .week.current h3 a {
+  color: #fff;
+  text-decoration: none; }
+
+/* line 119, stdin */
+.timeline .week.current h3:before {
+  top: 10px;
+  left: 17px;
+  background: url("../img/icons/week-current.svg") no-repeat 0 0; }
+
+/* line 123, stdin */
+.timeline .week:last-child {
+  border-left: none; }
+
+/* line 125, stdin */
+.timeline .week.closed {
+  background-image: -webkit-repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.5) 1px, rgba(255, 255, 255, 0.5) 2px);
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.5) 1px, rgba(255, 255, 255, 0.5) 2px); }
+
+/* line 128, stdin */
+.timeline .week .counter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #55513b;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-transform: uppercase; }
+
+/* line 139, stdin */
+.timeline .week .counter span {
+  margin: 16px 0 10px;
+  padding: 0 16px;
+  font-size: 10px;
+  display: inline-block; }
+
+/* line 144, stdin */
+.timeline .week .counter strong {
+  font-weight: bold;
+  display: block;
+  font-size: 24px; }
+
+/* line 149, stdin */
+.front .timeline {
+  margin-top: -400px; }
+
+/*# sourceMappingURL=../maps/module/timeline.css.map */

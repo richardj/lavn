@@ -1,0 +1,62 @@
+/* #86b918 */
+/* #6b9413 */
+/* #6d1f80 */
+/* #490859 */
+/* ff6600 */
+/* ce5200 */
+/* #55513b */
+/* #85805f */
+/* #b4b197 */
+/* #dddcd1 */
+/* f6f5ef */
+/* beb16c */
+/* 989898 */
+/* 956B3F */
+/*
+ * Club overview / club search
+ */
+/* line 18, stdin */
+.clubs form input[type="text"] {
+  font-size: 2rem; }
+
+/*
+ * Club page
+ */
+/* line 24, stdin */
+.club .card {
+  border: 1px solid grey;
+  background: white;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
+
+/* line 29, stdin */
+.club header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* line 35, stdin */
+.club .club-information {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* line 41, stdin */
+.club .club-content {
+  padding-left: 40px; }
+
+/* line 43, stdin */
+.club .club-content .dream {
+  font-size: 2rem;
+  font-weight: 700; }
+
+/* line 47, stdin */
+.club .club-members span {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  background: url("http://static.bleacherreport.net/images/redesign/avatars/default-user-icon-comment.png") no-repeat 50% 50%; }
+
+/*# sourceMappingURL=../maps/module/club.css.map */

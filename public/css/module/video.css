@@ -1,0 +1,35 @@
+/* line 1, stdin */
+.video.placeholder {
+  position: relative;
+  background: black; }
+
+/* line 4, stdin */
+.video.placeholder:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  margin-top: -25px;
+  display: block;
+  border: 2px solid white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%; }
+
+/* line 16, stdin */
+.video.placeholder:before {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: red;
+  /*      border-top: 10px solid transparent;
+      border-left: 30px solid white;
+      border-bottom: 10px solid transparent;
+      border-right: 10px solid transparent;*/ }
+
+/*# sourceMappingURL=../maps/module/video.css.map */
