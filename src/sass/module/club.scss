@@ -18,7 +18,8 @@
 
 .club {
   .card {
-    border: 1px solid grey;
+    flex: 1;
+    border: 1px solid $default-linecolor;
     background: white;
     box-shadow: 2px 2px 3px rgba(0,0,0,.5);
   }
@@ -32,7 +33,9 @@
   }
 
   .club-content {
+    flex: 1;
     padding-left: 40px;
+
     .dream {
       font-size: 2rem;
       font-weight: 700;
@@ -45,5 +48,10 @@
     border-radius: 50%;
     display: inline-block;
     background: url('http://static.bleacherreport.net/images/redesign/avatars/default-user-icon-comment.png') no-repeat 50% 50%;
+  }
+
+  .timeline {
+    margin-top: 40px;
+    margin-bottom: -180px;
   }
 }

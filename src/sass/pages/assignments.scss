@@ -4,6 +4,10 @@
  * jumbotron
  */
 
+body.weekassignment {
+  padding-top: 400px;
+}
+
 .weekassignment {
   .jumbotron {
     height: 25vh;
@@ -14,19 +18,8 @@
     padding-bottom: 0;
   }
 
-  #weekassignment {
-    max-width: 100%;
-    padding-top: 100px;
-    background: #fff;
-
-    .wrapper {
-      margin: 0 auto;
-      max-width: 1280px;
-    }
-  }
-
   .timeline {
-    /* margin-bottom: -100px; */
+    margin-top: -240px;
   }
 
   .winner-wrapper {
@@ -81,6 +74,14 @@
     &.third-place h3 {
       box-shadow: inset 60px 0 $bronze;
     }
+  }
+}
+
+#weekassignment {
+  h2 {
+    position: absolute;
+    left: 10px;
+    z-index: 2;
   }
 }
 
@@ -142,26 +143,27 @@
 
 .weekassignment {
   h1 {
+    font-size: 2.571rem;
     margin-bottom: 1rem;
     color: $orange;
   }
   p {
     margin-bottom: 1rem;
   }
+  /* video block */
   .half {
-    max-width: 66%;
-    margin-left: 33%;
-    margin-top: 20px;
-    margin-bottom: 200px;
+    margin: 20px 0 200px 120px;
     padding: 40px 40px 450px 222px;
+    position: relative;
     border: 1px solid $default-linecolor;
     background: #fff;
 
     article {
-      width: 90vh;
+      width: 1080px;
+      height: 608px;
       position: absolute;
+      left: -60px;
       margin-top: 32px;
-      margin-left: -400px;
     }
   }
 }

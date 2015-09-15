@@ -54,6 +54,10 @@
  * How does it work section
  */
 
+#how-wrapper {
+  margin-top: -240px;
+}
+
 #how-does-it-work {
   position: relative;
 
@@ -131,17 +135,18 @@
 
     h3 {
       width: 100%;
-      height: 60px;
+      height: 40px;
       padding-left: 80px;
       position: relative;
       color: #fff;
       font-weight: 700;
-      line-height: 30px;
+      line-height: 20px;
+      font-size: 1rem;
       position: absolute;
-      bottom: -60px;
+      bottom: -40px;
       text-transform: uppercase;
       background: $orange;
-      box-shadow: inset 60px 0 0 $orange-accent;
+      box-shadow: inset 40px 0 0 $orange-accent;
       transition: box-shadow 0.13s ease-in;
 
       &:hover {
@@ -155,11 +160,11 @@
       &:before {
         content: "";
         display: block;
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
         position: absolute;
-        left: 15px;
-        top: 15px;
+        left: 10px;
+        top: 10px;
         background: url('../img/icons/jury-icon.svg') no-repeat 0 0;
       }
     }

@@ -4,8 +4,11 @@
  * Week timeline
  */
 
-.timeline {
+.front .timeline {
   margin-top: -100px;
+}
+
+.timeline {
   margin-bottom: 85px;
   display: flex;
   justify-content: space-between;
@@ -151,6 +154,23 @@
         font-weight: bold;
         display: block;
         font-size: 24px;
+      }
+    }
+  }
+
+
+  &.small {
+    .week {
+      border: none;
+
+      h3 {
+        margin-bottom: 0;
+      }
+
+      &.current {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
       }
     }
   }

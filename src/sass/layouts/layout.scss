@@ -16,7 +16,12 @@ body {
 }
 
 body {
+  padding-top: 220px;
   background: $default-background;
+}
+
+body.front {
+  padding-top: 100px;
 }
 
 .container-wrapper {
@@ -31,6 +36,24 @@ body {
   &.small {
     padding-top: 100px;
     box-shadow: inset 0 200px rgba(255, 255, 255, 1);
+  }
+
+  &.bottom {
+    padding-bottom: 240px;
+    box-shadow: inset 0 -460px rgba(255, 255, 255, 1);
+  }
+  &.bottom.medium {
+    padding-bottom: 120px;
+    box-shadow: inset 0 -275px rgba(255, 255, 255, 1);
+  }
+  &.bottom.small {
+    padding-bottom: 100px;
+    box-shadow: inset 0 -200px rgba(255, 255, 255, 1);
+  }
+
+  &.none {
+    padding: 0;
+    box-shadow: none;
   }
 }
 
@@ -158,33 +181,6 @@ article {
   }
 }
 
-
-/*
-.post-section {
-  position: absolute;
-  left: 0;
-
-  h2 {
-    margin-bottom: 1rem;
-    display: block;
-  }
-
-  .block {
-    margin-top: -20%;
-  }
-}
-*/
-
-.before-bg {
-  content: "";
-  width: 150%;
-  left: 0;
-  position: absolute;
-  top: -50%;
-  height: 50vh;
-  background: red;
-  z-index: -1;
-}
 
 
 footer[role="document-footer"] {
