@@ -26,8 +26,9 @@
       padding: 0 10px;
       line-height: 100px;
       display: inline-block;
+      font-weight: 600;
       text-transform: uppercase;
-      color: #000;
+      color: $default-textcolor;
       text-decoration: none;
 
       &:hover,

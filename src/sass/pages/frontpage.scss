@@ -1,0 +1,191 @@
+@import '../helpers/variables';
+
+/*
+ * Frontpage featured
+ */
+#featured {
+  .content-wrapper {
+    max-width: 1200px;
+  }
+
+  h2 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .featured-spot {
+    position: relative;
+
+    header {
+      width: 100%;
+      padding: 30px 25px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: $orange;
+
+      p {
+        color: #fff;
+      }
+    }
+
+    h3 {
+      padding-left: 40px;
+      position: relative;
+      color: #fff;
+      font-weight: bold;
+      background: url('../img/icons/logo-ing.png') no-repeat 100% 11px;
+    }
+    h3:before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: 0;
+      top: 8px;
+      background: url('../img/icons/icon-idea.svg') no-repeat 0 0;
+    }
+  }
+}
+
+
+
+/*
+ * How does it work section
+ */
+
+#how-does-it-work {
+  position: relative;
+
+  .right {
+    flex: 50;
+    max-width: 66%;
+    padding: 40px 40px 40px 210px;
+    border: 1px solid $default-linecolor;
+    background: #fff;
+
+    ul li {
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      color: $default-textcolor;
+    }
+  }
+  h2 {
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+  }
+
+  .left {
+    margin: 5rem 0;
+    flex: 25;
+
+    .pull-right {
+      margin-right: -250px;
+    }
+  }
+}
+
+#post-how-section {
+  .block {
+    padding: 100px 0;
+  }
+
+  h2 {
+    margin-bottom: 13px;
+    font-size: 2.571rem;
+  }
+  p {
+    margin-bottom: 16px;
+    color: #000;
+    font-size: 1.429rem;
+  }
+}
+
+
+
+/*
+ * Jury section
+ */
+
+
+#jury {
+  h2 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.jury {
+  display: flex;
+  flex-wrap: wrap;
+
+  .member {
+    flex: 1;
+    margin-right: 20px;
+    position: relative;
+
+    h3 {
+      width: 100%;
+      height: 60px;
+      padding-left: 80px;
+      position: relative;
+      color: #fff;
+      font-weight: 700;
+      line-height: 30px;
+      position: absolute;
+      bottom: -60px;
+      text-transform: uppercase;
+      background: $orange;
+      box-shadow: inset 60px 0 0 $orange-accent;
+      transition: box-shadow 0.13s ease-in;
+
+      &:hover {
+        box-shadow: inset 24rem 0 0 $orange-accent;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        background: url('../img/icons/jury-icon.svg') no-repeat 0 0;
+      }
+    }
+    &.ruud .picture {
+      background: url('../img/member_ruud.jpg');
+      background-size: cover;
+    }
+    &.anouk .picture {
+      background: url('../img/member_anouk.jpg');
+      background-size: cover;
+    }
+    &.coen .picture {
+      background: url('../img/member_coen.jpg');
+      background-size: cover;
+    }
+    &.sander .picture {
+      background: url('../img/member_sander.jpg');
+      background-size: cover;
+    }
+    .picture {
+      height: 300px;
+      background-size: cover;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 @import '../helpers/variables';
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,600,400);
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -16,14 +16,29 @@ body {
 }
 
 body {
-  background: $default-bg;
+  background: $default-background;
+}
+
+.container-wrapper {
+  width: 100%;
+  padding-top: 240px;
+  box-shadow: inset 0 460px rgba(255, 255, 255, 1);
+
+  &.medium {
+    padding-top: 120px;
+    box-shadow: inset 0 275px rgba(255, 255, 255, 1);
+  }
+  &.small {
+    padding-top: 100px;
+    box-shadow: inset 0 200px rgba(255, 255, 255, 1);
+  }
 }
 
 .container {
   max-width: 1280px;
-  padding-bottom: 100px;
   display: block;
-  margin: 80px auto;
+  margin: 0 auto;
+  padding-bottom: 50px;
   position: relative;
 
   &.full {
@@ -59,9 +74,9 @@ body {
 
 .jumbotron {
   height: 80vh;
-  margin: 0 auto;
+  margin: 0 auto 270px;
   position: relative;
-  background: $default-bg url('../img/lavn-header.jpg') no-repeat 50% 50%;
+  background: $default-background url('../img/lavn-header.jpg') no-repeat 50% 50%;
   background-attachment: fixed;
   background-size: cover;
 
@@ -98,60 +113,8 @@ article {
 }
 
 /*
- * Frontpage featured
+ * Content wrapper for content that is a 2 column content 
  */
-#featured {
-  .content-wrapper {
-    max-width: 1280px;
-  }
-
-  h2 {
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .featured-spot {
-    position: relative;
-
-    header {
-      width: 100%;
-      padding: 30px 25px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background: $orange;
-
-      p {
-        color: #fff;
-      }
-    }
-
-    h3 {
-      padding-left: 40px;
-      position: relative;
-      color: #fff;
-      font-weight: bold;
-      background: url('../img/icons/logo-ing.png') no-repeat 100% 11px;
-    }
-    h3:before {
-      content: "";
-      width: 50px;
-      height: 50px;
-      position: absolute;
-      left: 0;
-      top: 8px;
-      background: url('../img/icons/icon-idea.svg') no-repeat 0 0;
-    }
-  }
-}
-
-#jury {
-  h2 {
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-  }
-}
-
 
 .content-wrapper {
   display: flex;
@@ -162,10 +125,10 @@ article {
   }
   .half:nth-child(1) {
     padding-left: 0;
-    padding-right: 2px;
+    padding-right: 20px;
   }
   .half:nth-child(2) {
-    padding-left: 3px;
+    padding-left: 0;
 
     article {
       width: 100%;
@@ -173,10 +136,17 @@ article {
       height: 200px;
     }
 
-    /* test css, remove after */
-    article:nth-child(even) {
-      background: red;
-    } 
+    .row {
+      margin-top: 20px;
+
+      article {
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
   }
 
   .row {
@@ -188,6 +158,8 @@ article {
   }
 }
 
+
+/*
 .post-section {
   position: absolute;
   left: 0;
@@ -201,86 +173,7 @@ article {
     margin-top: -20%;
   }
 }
-
-#how-does-it-work {
-  position: relative;
-
-  .right {
-    flex: 50;
-    max-width: 66%;
-    padding: 40px 40px 40px 300px;
-    border: 1px solid $default-linecolor;
-    background: #fff;
-
-    ul li {
-      margin-bottom: 1.5rem;
-    }
-
-    h3 {
-      font-size: 18px;
-      font-weight: bold;
-      color: $default-textcolor;
-    }
-  }
-  h2 {
-    position: absolute;
-    left: 72%;
-  }
-
-  .left {
-    margin: 5rem 0;
-    flex: 25;
-
-    .pull-right {
-      margin-right: -250px;
-    }
-  }
-
-
-  .list {
-    list-style: none;
-    padding: 0;
-    
-    
-    li {
-      position: relative;
-      margin-left: 2rem;
-    }
-    
-    li span {
-      width: 60px;
-      height: 60px;
-      background: #fff;
-      position: absolute;
-      text-align: center;
-      border-radius: 50%;
-      line-height: 55px;
-      left: -1.5rem;
-      color: #ff6600;
-      font-size: 28px;
-      font-weight: bold;
-      display: inline-block;
-      box-shadow: 0 0 0 6px #F6F5EF;
-      border: 3px solid #ff6600;
-      background: white;
-      
-      &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 200px;
-        width: 6px;
-        left: 50%;
-        top: 60px;
-        margin-left: -3px;
-        background: #F6F5EF;
-      }
-    }
-    li:last-child span:after {
-      display: none;
-    }
-  }
-}
+*/
 
 .before-bg {
   content: "";
@@ -293,74 +186,9 @@ article {
   z-index: -1;
 }
 
-.jury {
-  display: flex;
-  flex-wrap: wrap;
-
-  .member {
-    flex: 1;
-    position: relative;
-
-    h3 {
-      width: 100%;
-      height: 60px;
-      margin: -1px -1px 0 -1px;
-      padding-left: 80px;
-      position: relative;
-      color: #fff;
-      font-weight: 700;
-      line-height: 30px;
-      position: absolute;
-      bottom: -60px;
-      text-transform: uppercase;
-      background: $orange;
-      box-shadow: inset 60px 0 0 $orange-accent;
-      transition: box-shadow 0.13s ease-in;
-
-      &:hover {
-        box-shadow: inset 24rem 0 0 $orange-accent;
-      }
-      a {
-        color: #fff;
-        text-decoration: none;
-      }
-
-      &:before {
-        content: "";
-        display: block;
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        left: 15px;
-        top: 15px;
-        background: url('../img/icons/jury-icon.svg') no-repeat 0 0;
-      }
-    }
-    &.ruud .picture {
-      background: url('../img/member_ruud.jpg');
-      background-size: cover;
-    }
-    &.anouk .picture {
-      background: url('../img/member_anouk.jpg');
-      background-size: cover;
-    }
-    &.coen .picture {
-      background: url('../img/member_coen.jpg');
-      background-size: cover;
-    }
-    &.sander .picture {
-      background: url('../img/member_sander.jpg');
-      background-size: cover;
-    }
-    .picture {
-      height: 300px;
-      background-size: cover;
-    }
-  }
-}
-
 
 footer[role="document-footer"] {
+  margin-top: 110px;
   background: white;
 
   .wrapper {
