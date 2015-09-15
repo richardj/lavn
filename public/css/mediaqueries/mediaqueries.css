@@ -139,8 +139,9 @@
     font-size: 1rem; } }
 
 @media screen and (min-width: 800px) {
-  /* line 118, stdin */
-  nav[role="main-navigation"].mobile {
+  /* line 119, stdin */
+  nav[role="main-navigation"].mobile,
+  .menu-button {
     display: none; } }
 
 /* 880px */
@@ -148,12 +149,12 @@
  * It seems that at 880px a lot of the blocks don't have enough space anymore so we break there 
  */
 @media screen and (min-width: 880px) {
-  /* line 126, stdin */
+  /* line 127, stdin */
   .jumbotron {
     width: 100%; } }
 
 @media screen and (min-width: 1280px) {
-  /* line 130, stdin */
+  /* line 131, stdin */
   .jumbotron {
     width: 95%; } }
 

@@ -94,20 +94,4 @@
 .header nav[role="user-navigation"].logged-in {
   display: none; }
 
-/* line 78, stdin */
-.subheader {
-  width: 100%;
-  position: fixed;
-  top: 100px;
-  z-index: 99;
-  background: #ccc;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
 /*# sourceMappingURL=../maps/module/header.css.map */

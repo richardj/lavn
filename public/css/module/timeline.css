@@ -16,8 +16,11 @@
  * Week timeline
  */
 /* line 18, stdin */
+.front .timeline {
+  margin-top: -100px; }
+
+/* line 21, stdin */
 .timeline {
-  margin-top: -100px;
   margin-bottom: 85px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -28,7 +31,7 @@
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-/* line 29, stdin */
+/* line 31, stdin */
 .timeline .week {
   -webkit-flex-basis: 23%;
   -ms-flex-preferred-size: 23%;
@@ -38,18 +41,18 @@
   background: white;
   /* counter */ }
 
-/* line 37, stdin */
+/* line 39, stdin */
 .timeline .week .content {
   margin: 17px; }
 
-/* line 39, stdin */
+/* line 41, stdin */
 .timeline .week .locked {
   height: 132px;
   margin: 9px;
   padding: 10px;
   color: #55513b; }
 
-/* line 44, stdin */
+/* line 46, stdin */
 .timeline .week h3 {
   height: 60px;
   margin-bottom: 1rem;
@@ -63,7 +66,7 @@
   border-bottom: 1px solid #dddcd1;
   box-shadow: inset 60px 0 0 #f6f5ef; }
 
-/* line 56, stdin */
+/* line 58, stdin */
 .timeline .week h3:before {
   content: "";
   width: 50px;
@@ -73,31 +76,31 @@
   position: absolute;
   background: url("../img/icons/week-locked.svg") no-repeat 0 0; }
 
-/* line 64, stdin */
+/* line 66, stdin */
 .timeline .week p {
   color: #b4b197; }
 
-/* line 66, stdin */
+/* line 68, stdin */
 .timeline .week.ended {
   padding: 0; }
 
-/* line 68, stdin */
+/* line 70, stdin */
 .timeline .week.ended h3 {
   position: relative;
   box-shadow: inset 60px 0 0 #6b9413; }
 
-/* line 71, stdin */
+/* line 73, stdin */
 .timeline .week.ended h3 a {
   color: #fff;
   text-decoration: none; }
 
-/* line 74, stdin */
+/* line 76, stdin */
 .timeline .week.ended h3:before {
   top: 20px;
   left: 20px;
   background: url("../img/icons/week-ended.svg") no-repeat 0 0; }
 
-/* line 78, stdin */
+/* line 80, stdin */
 .timeline .week.current {
   padding: 0 0 50px 0;
   margin: -25px -1px;
@@ -111,11 +114,11 @@
   position: relative;
   background: #86b918; }
 
-/* line 90, stdin */
+/* line 92, stdin */
 .timeline .week.current p {
   color: #fff; }
 
-/* line 92, stdin */
+/* line 94, stdin */
 .timeline .week.current footer {
   width: 100%;
   position: absolute;
@@ -124,11 +127,11 @@
   color: #55513b;
   background: #fff; }
 
-/* line 99, stdin */
+/* line 101, stdin */
 .timeline .week.current a {
   color: #fff; }
 
-/* line 101, stdin */
+/* line 103, stdin */
 .timeline .week.current h3 {
   height: 60px;
   margin: -1px -1px 1rem -1px;
@@ -143,31 +146,31 @@
   -webkit-transition: box-shadow 0.13s ease-in;
   transition: box-shadow 0.13s ease-in; }
 
-/* line 114, stdin */
+/* line 116, stdin */
 .timeline .week.current h3:hover {
   box-shadow: inset 30rem 0 0 #6b9413; }
 
-/* line 116, stdin */
+/* line 118, stdin */
 .timeline .week.current h3 a {
   color: #fff;
   text-decoration: none; }
 
-/* line 119, stdin */
+/* line 121, stdin */
 .timeline .week.current h3:before {
   top: 10px;
   left: 17px;
   background: url("../img/icons/week-current.svg") no-repeat 0 0; }
 
-/* line 123, stdin */
+/* line 125, stdin */
 .timeline .week:last-child {
   border-left: none; }
 
-/* line 125, stdin */
+/* line 127, stdin */
 .timeline .week.closed {
   background-image: -webkit-repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.5) 1px, rgba(255, 255, 255, 0.5) 2px);
   background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.5) 1px, rgba(255, 255, 255, 0.5) 2px); }
 
-/* line 128, stdin */
+/* line 130, stdin */
 .timeline .week .counter {
   display: -webkit-box;
   display: -webkit-flex;
@@ -180,20 +183,34 @@
   justify-content: space-between;
   text-transform: uppercase; }
 
-/* line 139, stdin */
+/* line 141, stdin */
 .timeline .week .counter span {
   margin: 16px 0 10px;
   padding: 0 16px;
   font-size: 10px;
   display: inline-block; }
 
-/* line 144, stdin */
+/* line 146, stdin */
 .timeline .week .counter strong {
   font-weight: bold;
   display: block;
   font-size: 24px; }
 
-/* line 149, stdin */
+/* line 150, stdin */
+.timeline.small .week {
+  border: none; }
+
+/* line 152, stdin */
+.timeline.small .week h3 {
+  margin-bottom: 0; }
+
+/* line 154, stdin */
+.timeline.small .week.current {
+  margin: 0;
+  padding: 0;
+  box-shadow: none; }
+
+/* line 159, stdin */
 .front .timeline {
   margin-top: -400px; }
 

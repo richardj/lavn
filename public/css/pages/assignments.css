@@ -16,31 +16,24 @@
  * jumbotron
  */
 /* line 18, stdin */
+body.weekassignment {
+  padding-top: 400px; }
+
+/* line 21, stdin */
 .weekassignment .jumbotron {
   height: 25vh;
   background-image: none; }
 
-/* line 22, stdin */
+/* line 25, stdin */
 .weekassignment .container {
   margin-bottom: 0;
   padding-bottom: 0; }
 
-/* line 26, stdin */
-.weekassignment #weekassignment {
-  max-width: 100%;
-  padding-top: 100px;
-  background: #fff; }
-
-/* line 30, stdin */
-.weekassignment #weekassignment .wrapper {
-  margin: 0 auto;
-  max-width: 1280px; }
-
-/* line 34, stdin */
+/* line 29, stdin */
 .weekassignment .timeline {
-  /* margin-bottom: -100px; */ }
+  margin-top: -240px; }
 
-/* line 37, stdin */
+/* line 32, stdin */
 .weekassignment .winner-wrapper {
   margin-top: 40px;
   display: -webkit-box;
@@ -48,25 +41,25 @@
   display: -ms-flexbox;
   display: flex; }
 
-/* line 44, stdin */
+/* line 39, stdin */
 .weekassignment .winner {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 49, stdin */
+/* line 44, stdin */
 .weekassignment .winner .information {
   border: 1px solid #dddcd1;
   background: #fff; }
 
-/* line 52, stdin */
+/* line 47, stdin */
 .weekassignment .winner .information h3 {
   height: 60px;
   border-bottom: 1px solid #dddcd1;
   padding: 0 0 0 60px; }
 
-/* line 56, stdin */
+/* line 51, stdin */
 .weekassignment .winner .information h3 .place {
   height: 60px;
   margin-right: 20px;
@@ -76,7 +69,7 @@
   display: inline-block;
   border-right: 1px solid #dddcd1; }
 
-/* line 64, stdin */
+/* line 59, stdin */
 .weekassignment .winner .entry {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -85,14 +78,14 @@
   height: 200px;
   background: black; }
 
-/* line 71, stdin */
+/* line 66, stdin */
 .weekassignment .winner .information {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1; }
 
-/* line 77, stdin */
+/* line 72, stdin */
 .weekassignment .winner.second-place,
 .weekassignment .winner.third-place {
   -webkit-box-flex: 1;
@@ -100,17 +93,23 @@
   -ms-flex: 1;
   flex: 1; }
 
-/* line 82, stdin */
+/* line 77, stdin */
 .weekassignment .winner.first-place h3 {
   box-shadow: inset 60px 0 #beb16c; }
 
-/* line 84, stdin */
+/* line 79, stdin */
 .weekassignment .winner.second-place h3 {
   box-shadow: inset 60px 0 #989898; }
 
-/* line 86, stdin */
+/* line 81, stdin */
 .weekassignment .winner.third-place h3 {
   box-shadow: inset 60px 0 #956b3f; }
+
+/* line 84, stdin */
+#weekassignment h2 {
+  position: absolute;
+  left: 10px;
+  z-index: 2; }
 
 /*
  * Prices
@@ -174,29 +173,33 @@
   background: #f6f5ef; }
 
 /* line 134, stdin */
+.weekassignment {
+  /* video block */ }
+
+/* line 136, stdin */
 .weekassignment h1 {
+  font-size: 2.571rem;
   margin-bottom: 1rem;
   color: #ff6600; }
 
-/* line 138, stdin */
+/* line 140, stdin */
 .weekassignment p {
   margin-bottom: 1rem; }
 
-/* line 141, stdin */
+/* line 142, stdin */
 .weekassignment .half {
-  max-width: 66%;
-  margin-left: 33%;
-  margin-top: 20px;
-  margin-bottom: 200px;
+  margin: 20px 0 200px 120px;
   padding: 40px 40px 450px 222px;
+  position: relative;
   border: 1px solid #dddcd1;
   background: #fff; }
 
-/* line 149, stdin */
+/* line 148, stdin */
 .weekassignment .half article {
-  width: 90vh;
+  width: 1080px;
+  height: 608px;
   position: absolute;
-  margin-top: 32px;
-  margin-left: -400px; }
+  left: -60px;
+  margin-top: 32px; }
 
 /*# sourceMappingURL=../maps/pages/assignments.css.map */
