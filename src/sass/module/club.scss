@@ -28,16 +28,61 @@
     display: flex;
   }
 
-  .club-information {
+  .club-branding {
     display: flex;
+    padding: 35px 27px;
+
+    .name {
+      padding-top: 30px;
+      padding-left: 31px;
+    }
+  }
+
+  h1 {
+    margin-bottom: 6px;
+    color: $orange;
+    font-size: 1.714rem;
+  }
+
+  .city {
+    padding: 0;
+  }
+
+  .club-information {
+    border-top: 1px solid $default-linecolor;
+    display: flex;
+
+    .members,
+    .founded,
+    .classification {
+      flex: 1;
+    }
+
+    p {
+      padding: 8px 11px;
+      text-transform: uppercase;
+    }
+
+    h4 {
+      margin-bottom: 1.714rem;
+      color: $default-textcolor;
+      font-size: 1.714rem;
+      font-weight: 700;
+      text-align: center;
+    }
   }
 
   .club-content {
     flex: 1;
     padding-left: 40px;
 
+    .user-info {
+      margin-bottom: 10px;
+    }
+
     .dream {
-      font-size: 2rem;
+      height: 140px;
+      font-size: 1.429rem;
       font-weight: 700;
     }
   }
@@ -53,5 +98,89 @@
   .timeline {
     margin-top: 40px;
     margin-bottom: -180px;
+  }
+}
+
+.assignment {
+  margin-top: 77px;
+  h2 {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    z-index: 3;
+  }
+  .half {
+    margin: 20px 0 200px 120px;
+    padding: 40px 40px 40px 222px;
+    position: relative;
+    border: 1px solid $default-linecolor;
+    background: #fff;
+
+    h3 {
+      margin-bottom: 12px;
+      color: $orange;
+      font-size: 2.571rem;
+      font-weight: 700;
+    }
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.286rem;
+    }
+
+    /* counter */
+
+    .counter {
+      width: 300px;
+      display: flex;
+      border: 1px solid $default-linecolor;
+
+      span {
+        padding: 7px;
+        flex: 1;
+        text-align: center;
+        font-size: 0.7143rem;
+        border-right: 1px solid $default-linecolor;
+
+        &:last-child {
+          border-right: none;
+        }
+
+        strong {
+          display: block;
+          font-size: 1.714rem;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .share {
+      position: absolute;
+      bottom: -30px;
+      right: 0;
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+
+.submission {
+  max-width: 1080px;
+  margin: 0 auto;
+
+  .footer-bar {
+    padding: 20px;
+    display: flex;
+    background: white;
+  }
+  .username {
+    flex: 1;
+  }
+  .sharing {
+    width: 250px;
+  }
+  .reporting {
+    width: 250px;
   }
 }
