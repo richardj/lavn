@@ -49,5 +49,18 @@ $(function() {
       $('body').removeClass('small-logo');
     }
     console.log($(document).scrollTop());
-  })
+  });
+
+
+
+  / * faq */
+
+  $('.question-answer .trigger').on('click', function(event) {
+    if ($(this).parents('.question-answer').hasClass('open')) {
+      $(this).parents('.question-answer').removeClass('open');
+    }
+    else {
+      $(this).parents('.question-answer').addClass('open');
+    }
+  });
 });

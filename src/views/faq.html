@@ -7,69 +7,90 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="wrapper">
-      <nav role="main-navigation">
-        <a href="#">Home</a>
-        <a href="#">Hoe werkt het?</a>
-        <a href="#">Zoek een club</a>
-        <a href="#">Contact</a>
-      </nav>
+  <div class="layout-wrapper">
+    <header class="header">
+      <div class="wrapper">
+        <nav role="main-navigation" class="open">
+          <a href="index.html" class="active">Home</a>
+          <a href="weekassignment.html">Weekopdrachten</a>
+          <a href="#">Zoek een club</a>
+          <a href="#">FAQ</a>
+        </nav>
 
-      <div class="branding"><a href="#">Logo</a></div>
+        <div class="branding"><a href="#">Logo</a></div>
 
-      <nav role="user-navigation">
-        <a href="#" class="btn">Doe mee</a>
-        <a href="#" class="btn">Login</a>
-      </nav>
+        <nav role="user-navigation">
+          <div class="wrapper">
+            <a href="#" class="btn solid green">Doe mee</a>
+            <a href="#" class="btn orange">Login</a>
+          </div>
+        </nav>
 
-      <nav role="user-navigation" class="logged-in">
-        <a href="#" class="clublogo">Mijn club</a>
-        <a href="#">Mijn profiel</a>
-        <a href="#">Uitloggen</a>
-      </nav>
+        <nav role="user-navigation" class="logged-in">
+          <div class="wrapper">
+            <a href="#" class="clublogo">Mijn club</a>
+            <a href="#">Mijn profiel</a>
+            <a href="#">Uitloggen</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="container">
+      <h1>Veelgestelde vragen</h1>
+      <p>Vivamus leo metus, efficitur sed dictum et, luctus vel urna. Sed eget scelerisque elit. Duis ut lobortis orci, sed convallis justo. Quisque varius turpis vitae elit mattis tincidunt. Nullam id tincidunt sem. Praesent ornare nulla auctor urna fringilla bibendum.</p>
+    </section>
+
+
+    <div class="container-wrapper small">
+      <section class="container faq">
+
+        <ul class="faq">
+          <div class="question-answer">
+            <span class="trigger"></span>
+            <h3>Ik ben zelf geen lid van een club, kan ik nu nog wel meedoen?</h3>
+            <dov class="answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt consequat lorem, in placerat arcu pretium at. Vestibulum quis semper nulla. Vivamus leo metus, efficitur sed dictum et, luctus vel urna. Sed eget scelerisque elit. Duis ut lobortis orci, sed convallis justo. Quisque varius turpis vitae elit mattis tincidunt. Nullam id tincidunt sem. Praesent ornare nulla auctor urna fringilla bibendum. Mauris vitae ligula at massa finibus venenatis sed id orci. Phasellus sed sapien eu nibh bibendum molestie. Morbi non sapien libero. Praesent at vulputate nulla. Integer vitae dolor eget ipsum placerat interdum ut vitae leo.</p>
+            </dov>
+          </div>
+
+          <div class="question-answer">
+            <span class="trigger"></span>
+            <h3>Dit is een vraag</h3>
+            <dov class="answer">
+              <p>Lorem ipsum dolir sit amet</p>
+            </dov>
+          </div>
+
+          <div class="question-answer">
+            <span class="trigger"></span>
+            <h3>Dit is een vraag</h3>
+            <dov class="answer">
+              <p>Lorem ipsum dolir sit amet</p>
+            </dov>
+          </div>
+        </ul>
+      </section>
     </div>
-  </header>
 
-  <section class="container faq">
-    <h1>Veelgestelde vragen</h1>
+    <footer role="document-footer">
+      <div class="wrapper">
+        <nav>
+          <a href="#">Gebruikersvoorwaarden</a> -
+          <a href="#">Privacy policy</a> -
+          <a href="#">Cookie policy</a>
+        </nav>
 
-    <ul class="faq">
-      <div class="question-answer">
-        <h2>Dit is een vraag</h2>
-        <dov class="amswer">
-          <p>Lorem ipsum dolir sit amet>/
-        </dov>
+        <p class="partners">
+          <a href="http://538.nl" class="partner radio538"><img src="img/icons/logo-538.png" alt="logo radio 538" /></a>
+          <a href="http://ing.nl" class="partner ing"><img src="img/icons/logo-ing.png" alt="logo ING bank" /></a>
+          Mede mogelijk gemaakt door: <a href="http://www.knvb.nl" class="partner knvb"><img src="img/icons/logo-knvb.png" alt="logo KNVB" /></a>
+        </p>
       </div>
-
-      <div class="question-answer">
-        <h2>Dit is een vraag</h2>
-        <dov class="amswer">
-          <p>Lorem ipsum dolir sit amet>/
-        </dov>
-      </div>
-
-      <div class="question-answer">
-        <h2>Dit is een vraag</h2>
-        <dov class="amswer">
-          <p>Lorem ipsum dolir sit amet>/
-        </dov>
-      </div>
-    </ul>
-  </section>
-
-  <footer>
-    <nav>
-      <a href="#">Gebruikersvoorwaarden</a> -
-      <a href="#">Privacy policy</a> -
-      <a href="#">Cookie policy</a> -
-    </nav>
-
-    <p class="partners">
-      <a href="http://www.knvb.nl">KNVB</a>
-      <a href="http://538.nl">538</a>
-      <a href="http://ing.nl">ING</a>
-    </p>
-  </footer>
+    </footer>
+  </div>
+  <script src="./scripts/jquery.min.js"></script>
+  <script src="./scripts/angular.min.js"></script>
+  <script src="./scripts/project.js"></script>
 </body>
 </html>
