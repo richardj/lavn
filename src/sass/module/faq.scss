@@ -1,14 +1,47 @@
 @import '../helpers/variables';
 
-.questions-answer {
-    background: grey;
+.question-answer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-bottom: 44px;
+  position: relative;
+  border: 1px solid $default-linecolor;
+  background: white;
 
-    h2 {
-      margin-bottom: 1rem;
-    }
-    .answer {
-      border-top: 1px solid grey;
-      border-bottom: 1px solid grey;
-      background: light-grey;
-    }
+  height: 70px;
+  overflow: hidden;
+
+
+  &.open {
+    height: auto;
+  }
+
+  .trigger {
+    width: 70px;
+    height: 70px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../img/icons/caret.png') no-repeat 50% 50%;
+    border-bottom: 1px solid $default-linecolor;
+    border-right: 1px solid $default-linecolor;
+  }
+
+  h3 {
+    margin-top: 6px;
+    font-size: 1.286rem;
+    font-weight: 700;
+  }
+
+  .answer {
+    font-size: 1.286rem;
+    line-height: 1.286rem;
+    margin-right: 275px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    background: light-grey;
+  }
 }

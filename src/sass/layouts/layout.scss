@@ -219,7 +219,18 @@ footer[role="document-footer"] {
   }
 }
 
+.container.content {
+  max-width: 1200px;
+  padding: 50px 175px;
+  border: 1px solid $default-linecolor;
+  background: white;
 
+  p {
+    margin-bottom: 1rem;
+    font-size: 1.286rem;
+    line-height: 1.286rem;
+  }
+}
 
 
 textarea {
