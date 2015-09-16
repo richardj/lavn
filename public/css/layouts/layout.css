@@ -244,6 +244,19 @@ footer[role="document-footer"] a {
     right: 0; } }
 
 /* line 180, stdin */
+.container.content {
+  max-width: 1200px;
+  padding: 50px 175px;
+  border: 1px solid #dddcd1;
+  background: white; }
+
+/* line 185, stdin */
+.container.content p {
+  margin-bottom: 1rem;
+  font-size: 1.286rem;
+  line-height: 1.286rem; }
+
+/* line 190, stdin */
 textarea {
   width: 100%;
   min-width: 100%;

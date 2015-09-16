@@ -23,7 +23,6 @@ function loadCountDown() {
 
 
 $(function() {
-  /* mobile navigation switch */
 
   $('.menu-button').on('click', function(event){
     if ($('body').hasClass('navigation-open')) {
@@ -53,9 +52,15 @@ $(function() {
   });
 
 
-  /* Modal activation and deactivation */
-  $('.modal .close').on('click', function(event) {
-    $(this).parents('.modal-wrapper').hide();
-    $('.overlay').hide();
+
+  / * faq */
+
+  $('.question-answer .trigger').on('click', function(event) {
+    if ($(this).parents('.question-answer').hasClass('open')) {
+      $(this).parents('.question-answer').removeClass('open');
+    }
+    else {
+      $(this).parents('.question-answer').addClass('open');
+    }
   });
 });

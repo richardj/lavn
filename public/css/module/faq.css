@@ -13,15 +13,45 @@
 /* 989898 */
 /* 956B3F */
 /* line 15, stdin */
-.questions-answer {
-  background: grey; }
+.question-answer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-bottom: 44px;
+  position: relative;
+  border: 1px solid #dddcd1;
+  background: white;
+  height: 70px;
+  overflow: hidden; }
 
-/* line 17, stdin */
-.questions-answer h2 {
-  margin-bottom: 1rem; }
+/* line 25, stdin */
+.question-answer.open {
+  height: auto; }
 
-/* line 19, stdin */
-.questions-answer .answer {
+/* line 27, stdin */
+.question-answer .trigger {
+  width: 70px;
+  height: 70px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("../img/icons/caret.png") no-repeat 50% 50%;
+  border-bottom: 1px solid #dddcd1;
+  border-right: 1px solid #dddcd1; }
+
+/* line 38, stdin */
+.question-answer h3 {
+  margin-top: 6px;
+  font-size: 1.286rem;
+  font-weight: 700; }
+
+/* line 42, stdin */
+.question-answer .answer {
+  font-size: 1.286rem;
+  line-height: 1.286rem;
+  margin-right: 275px;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
   background: light-grey; }
