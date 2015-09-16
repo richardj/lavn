@@ -197,20 +197,25 @@
   font-size: 24px; }
 
 /* line 150, stdin */
+.timeline.small {
+  border-top: 1px solid #dddcd1;
+  border-right: 1px solid #dddcd1; }
+
+/* line 153, stdin */
 .timeline.small .week {
   border: none; }
 
-/* line 152, stdin */
+/* line 155, stdin */
 .timeline.small .week h3 {
   margin-bottom: 0; }
 
-/* line 154, stdin */
+/* line 157, stdin */
 .timeline.small .week.current {
   margin: 0;
   padding: 0;
   box-shadow: none; }
 
-/* line 159, stdin */
+/* line 162, stdin */
 .front .timeline {
   margin-top: -400px; }
 

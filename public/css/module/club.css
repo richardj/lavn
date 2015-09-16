@@ -40,13 +40,59 @@
   display: flex; }
 
 /* line 39, stdin */
+.club .club-branding {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 35px 27px; }
+
+/* line 45, stdin */
+.club .club-branding .name {
+  padding-top: 30px;
+  padding-left: 31px; }
+
+/* line 49, stdin */
+.club h1 {
+  margin-bottom: 6px;
+  color: #ff6600;
+  font-size: 1.714rem; }
+
+/* line 54, stdin */
+.club .city {
+  padding: 0; }
+
+/* line 57, stdin */
 .club .club-information {
+  border-top: 1px solid #dddcd1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 45, stdin */
+/* line 65, stdin */
+.club .club-information .members,
+.club .club-information .founded,
+.club .club-information .classification {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+/* line 70, stdin */
+.club .club-information p {
+  padding: 8px 11px;
+  text-transform: uppercase; }
+
+/* line 73, stdin */
+.club .club-information h4 {
+  margin-bottom: 1.714rem;
+  color: #55513b;
+  font-size: 1.714rem;
+  font-weight: 700;
+  text-align: center; }
+
+/* line 80, stdin */
 .club .club-content {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -54,12 +100,17 @@
   flex: 1;
   padding-left: 40px; }
 
-/* line 51, stdin */
+/* line 86, stdin */
+.club .club-content .user-info {
+  margin-bottom: 10px; }
+
+/* line 88, stdin */
 .club .club-content .dream {
-  font-size: 2rem;
+  height: 140px;
+  font-size: 1.429rem;
   font-weight: 700; }
 
-/* line 55, stdin */
+/* line 93, stdin */
 .club .club-members span {
   height: 30px;
   width: 30px;
@@ -67,9 +118,110 @@
   display: inline-block;
   background: url("http://static.bleacherreport.net/images/redesign/avatars/default-user-icon-comment.png") no-repeat 50% 50%; }
 
-/* line 62, stdin */
+/* line 100, stdin */
 .club .timeline {
   margin-top: 40px;
   margin-bottom: -180px; }
+
+/* line 104, stdin */
+.assignment {
+  margin-top: 77px; }
+
+/* line 106, stdin */
+.assignment h2 {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  z-index: 3; }
+
+/* line 111, stdin */
+.assignment .half {
+  margin: 20px 0 200px 120px;
+  padding: 40px 40px 40px 222px;
+  position: relative;
+  border: 1px solid #dddcd1;
+  background: #fff;
+  /* counter */ }
+
+/* line 118, stdin */
+.assignment .half h3 {
+  margin-bottom: 12px;
+  color: #ff6600;
+  font-size: 2.571rem;
+  font-weight: 700; }
+
+/* line 123, stdin */
+.assignment .half p {
+  margin-bottom: 1rem;
+  font-size: 1.286rem; }
+
+/* line 126, stdin */
+.assignment .half .counter {
+  width: 300px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #dddcd1; }
+
+/* line 133, stdin */
+.assignment .half .counter span {
+  padding: 7px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+  font-size: 0.7143rem;
+  border-right: 1px solid #dddcd1; }
+
+/* line 142, stdin */
+.assignment .half .counter span:last-child {
+  border-right: none; }
+
+/* line 144, stdin */
+.assignment .half .counter span strong {
+  display: block;
+  font-size: 1.714rem;
+  font-weight: 700; }
+
+/* line 148, stdin */
+.assignment .half .share {
+  position: absolute;
+  bottom: -30px;
+  right: 0; }
+
+/* line 152, stdin */
+.assignment .half .share p {
+  font-size: 1rem; }
+
+/* line 155, stdin */
+.submission {
+  max-width: 1080px;
+  margin: 0 auto; }
+
+/* line 158, stdin */
+.submission .footer-bar {
+  padding: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: white; }
+
+/* line 165, stdin */
+.submission .username {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+/* line 170, stdin */
+.submission .sharing {
+  width: 250px; }
+
+/* line 172, stdin */
+.submission .reporting {
+  width: 250px; }
 
 /*# sourceMappingURL=../maps/module/club.css.map */
