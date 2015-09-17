@@ -3,8 +3,9 @@
 /* mobile navigation */
 
 @media screen and (max-width: 800px) {
-  .branding {
-    background: url('../img/LAVN_medium.png') no-repeat 50% 50% !important;
+
+  .video {
+    width: 100% !important;
   }
 
   .menu-button {
@@ -14,12 +15,15 @@
     padding: 0;
     width: 2.5em;
     height: 2.25em;
+    position: fixed;
+    top: 5px;
     overflow: hidden;
     border: none;
     text-indent: 2.5em;
     font-size: 1.5em;
     color: rgba(0, 0, 0, 0);
     background: rgba(0, 0, 0, 0);
+    transition: transform .13s ease-in;
 
     &:before {
       content: "";
@@ -28,7 +32,15 @@
       right: 0.5em;
       bottom: 0.5em;
       left: 0.5em;
-      background: linear-gradient(#373a47 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 40%, #373a47 40%, #373a47 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 80%, #373a47 80%);
+      background: linear-gradient(#373a47 20%, 
+                  rgba(0, 0, 0, 0) 20%, 
+                  rgba(0, 0, 0, 0) 40%, #373a47 40%, #373a47 60%, 
+                  rgba(0, 0, 0, 0) 60%, 
+                  rgba(0, 0, 0, 0) 80%, #373a47 80%);
+    }
+
+    &.small {
+      transform: translateY(-20px);
     }
   }
 
@@ -72,7 +84,6 @@
   }
 
   .layout-wrapper {
-    transform: translateX(0);
     transition: transform .23s ease-in;
   }
 
@@ -87,12 +98,19 @@
   }
 
 
+  /* hide user navigation */
+  nav[role="user-navigation"] {
+    display: none;
+  }
+
+
   .jumbotron {
     height: 100vh;
 
     .introduction {
        max-width: 100%;
-       top: 50%;
+       top: auto;
+       bottom: 165px;
     }
 
     .btn {

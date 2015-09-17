@@ -57,15 +57,36 @@ gulp.task('copyscripts', function() {
   var angular = gulp.src('./bower_components/angular/angular.min.js')
     .pipe(gulp.dest('./public/scripts'));
 
+  var timer = gulp.src('./bower_components/angular-timer/dist/angular-timer.min.js')
+    .pipe(gulp.dest('./public/scripts'));
+
+  var jquery = gulp.src('./bower_components/jquery/dist/jquery.min.js')
+    .pipe(gulp.dest('./public/scripts'));
+
+  var vex = gulp.src('./bower_components/vex/js/vex.combined.min.js')
+    .pipe(gulp.dest('./public/scripts'));
+
+  var moment = gulp.src('./bower_components/moment/min/moment.min.js')
+    .pipe(gulp.dest('./public/scripts'));
+
+  var countdown = gulp.src('./bower_components/countdownjs/countdown.min.js')
+    .pipe(gulp.dest('./public/scripts'));
+
   var layout = gulp.src('./src/scripts/layout.js')
     .pipe(gulp.dest('./public/scripts'));
 
   var project = gulp.src('./src/scripts/project.js')
     .pipe(gulp.dest('./public/scripts'));
 
-  return merge(angular, layout, project);
+  return merge(angular, jquery, vex, moment, countdown, layout, project);
 });
 
+
+/*
+ * Compress and uglify scripts
+ */
+/*
+*/
 
 gulp.task('watch', function() {
   gulp.watch(sassSrc + '/**/*.scss', ['sass']);
