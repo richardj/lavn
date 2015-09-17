@@ -20,7 +20,8 @@ body {
   background: $default-background;
 }
 
-body.front {
+body.front,
+body.leader {
   padding-top: 100px;
 }
 
@@ -243,4 +244,10 @@ textarea {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   border: none;
+}
+
+
+
+.leader .jumbotron {
+  margin-bottom: -130px;
 }
