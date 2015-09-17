@@ -35,47 +35,48 @@ body {
   padding-top: 220px;
   background: #f6f5ef; }
 
-/* line 34, stdin */
-body.front {
+/* line 35, stdin */
+body.front,
+body.leader {
   padding-top: 100px; }
 
-/* line 37, stdin */
+/* line 38, stdin */
 .container-wrapper {
   width: 100%;
   padding-top: 240px;
   box-shadow: inset 0 460px white; }
 
-/* line 41, stdin */
+/* line 42, stdin */
 .container-wrapper.medium {
   padding-top: 120px;
   box-shadow: inset 0 275px white; }
 
-/* line 44, stdin */
+/* line 45, stdin */
 .container-wrapper.small {
   padding-top: 100px;
   box-shadow: inset 0 200px white; }
 
-/* line 47, stdin */
+/* line 48, stdin */
 .container-wrapper.bottom {
   padding-bottom: 240px;
   box-shadow: inset 0 -460px white; }
 
-/* line 50, stdin */
+/* line 51, stdin */
 .container-wrapper.bottom.medium {
   padding-bottom: 120px;
   box-shadow: inset 0 -275px white; }
 
-/* line 53, stdin */
+/* line 54, stdin */
 .container-wrapper.bottom.small {
   padding-bottom: 100px;
   box-shadow: inset 0 -200px white; }
 
-/* line 56, stdin */
+/* line 57, stdin */
 .container-wrapper.none {
   padding: 0;
   box-shadow: none; }
 
-/* line 60, stdin */
+/* line 61, stdin */
 .container {
   max-width: 1280px;
   display: block;
@@ -83,28 +84,28 @@ body.front {
   padding-bottom: 50px;
   position: relative; }
 
-/* line 66, stdin */
+/* line 67, stdin */
 .container.full {
   max-width: 100%; }
 
-/* line 68, stdin */
+/* line 69, stdin */
 .container h2 {
   padding: 4px 10px;
   color: white;
   display: inline-block;
   background: black; }
 
-/* line 73, stdin */
+/* line 74, stdin */
 .container h2.multiline {
   background: none;
   padding: 0; }
 
-/* line 76, stdin */
+/* line 77, stdin */
 .container h2.multiline span {
   padding: 4px 10px;
   background: black; }
 
-/* line 79, stdin */
+/* line 80, stdin */
 .container h2.multiline span:last-child {
   margin-top: 10px;
   display: block; }
@@ -112,7 +113,7 @@ body.front {
 /*
  * Jumbotron default
  */
-/* line 86, stdin */
+/* line 87, stdin */
 .jumbotron {
   height: 80vh;
   margin: 0 auto 270px;
@@ -121,14 +122,14 @@ body.front {
   background-attachment: fixed;
   background-size: cover; }
 
-/* line 93, stdin */
+/* line 94, stdin */
 .jumbotron .introduction {
   max-width: 55%;
   position: absolute;
   left: 4%;
   top: 20%; }
 
-/* line 98, stdin */
+/* line 99, stdin */
 .jumbotron .introduction h1 {
   margin-bottom: .5rem;
   padding: 10px;
@@ -136,14 +137,14 @@ body.front {
   display: inline-block;
   background: white; }
 
-/* line 104, stdin */
+/* line 105, stdin */
 .jumbotron .introduction p {
   padding: 10px;
   color: white;
   font-size: 21px;
   display: inline-block; }
 
-/* line 110, stdin */
+/* line 111, stdin */
 article.placeholder {
   width: 100%;
   height: 500px;
@@ -153,14 +154,14 @@ article.placeholder {
 /*
  * Content wrapper for content that is a 2 column content 
  */
-/* line 119, stdin */
+/* line 120, stdin */
 .content-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 124, stdin */
+/* line 125, stdin */
 .content-wrapper .half {
   padding: 5px;
   -webkit-box-flex: 1;
@@ -168,95 +169,95 @@ article.placeholder {
   -ms-flex: 1;
   flex: 1; }
 
-/* line 130, stdin */
+/* line 131, stdin */
 .content-wrapper .half:nth-child(1) {
   padding-left: 0;
   padding-right: 20px; }
 
-/* line 133, stdin */
+/* line 134, stdin */
 .content-wrapper .half:nth-child(2) {
   padding-left: 0; }
 
-/* line 135, stdin */
+/* line 136, stdin */
 .content-wrapper .half:nth-child(2) article {
   width: 100%;
   display: inline-block;
   height: 200px; }
 
-/* line 139, stdin */
+/* line 140, stdin */
 .content-wrapper .half:nth-child(2) .row {
   margin-top: 20px; }
 
-/* line 141, stdin */
+/* line 142, stdin */
 .content-wrapper .half:nth-child(2) .row article {
   margin-right: 20px; }
 
-/* line 143, stdin */
+/* line 144, stdin */
 .content-wrapper .half:nth-child(2) .row article:last-child {
   margin-right: 0; }
 
-/* line 145, stdin */
+/* line 146, stdin */
 .content-wrapper .row {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 150, stdin */
+/* line 151, stdin */
 .content-wrapper .row article {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1; }
 
-/* line 156, stdin */
+/* line 157, stdin */
 footer[role="document-footer"] {
   margin-top: 110px;
   background: white; }
 
-/* line 159, stdin */
+/* line 160, stdin */
 footer[role="document-footer"] .wrapper {
   position: relative;
   max-width: 1280px;
   margin: 0 auto; }
 
-/* line 163, stdin */
+/* line 164, stdin */
 footer[role="document-footer"] nav {
   margin-bottom: 40px;
   padding-top: 40px;
   text-align: center; }
 
-/* line 167, stdin */
+/* line 168, stdin */
 footer[role="document-footer"] a {
   color: #000; }
 
 @media screen and (min-width: 880px) {
-  /* line 171, stdin */
+  /* line 172, stdin */
   footer[role="document-footer"] {
     height: 95px; }
-  /* line 173, stdin */
+  /* line 174, stdin */
   footer[role="document-footer"] nav {
     text-align: left; }
-  /* line 175, stdin */
+  /* line 176, stdin */
   footer[role="document-footer"] .partners {
     position: absolute;
     top: 20px;
     right: 0; } }
 
-/* line 180, stdin */
+/* line 181, stdin */
 .container.content {
   max-width: 1200px;
   padding: 50px 175px;
   border: 1px solid #dddcd1;
   background: white; }
 
-/* line 185, stdin */
+/* line 186, stdin */
 .container.content p {
   margin-bottom: 1rem;
   font-size: 1.286rem;
   line-height: 1.286rem; }
 
-/* line 190, stdin */
+/* line 191, stdin */
 textarea {
   width: 100%;
   min-width: 100%;
@@ -267,5 +268,9 @@ textarea {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   border: none; }
+
+/* line 202, stdin */
+.leader .jumbotron {
+  margin-bottom: -130px; }
 
 /*# sourceMappingURL=../maps/layouts/layout.css.map */

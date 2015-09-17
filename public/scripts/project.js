@@ -37,22 +37,6 @@ $(function() {
     $('body').removeClass('navigation-open');
   });
 
-
-
-  /* change logo when scrolling */
-
-  $(document).on('scroll', function(event) {
-    if ($(document).scrollTop() > 100) {
-      $('body').addClass('small-logo');
-    }
-    else {
-      $('body').removeClass('small-logo');
-    }
-    console.log($(document).scrollTop());
-  });
-
-
-
   / * faq */
 
   $('.question-answer .trigger').on('click', function(event) {
@@ -61,6 +45,22 @@ $(function() {
     }
     else {
       $(this).parents('.question-answer').addClass('open');
+    }
+  });
+
+
+  /* logo switching */
+
+  $(document).on('scroll', function(e) {    
+    if ($(document).scrollTop() > 100 ) {
+      $('header').addClass('small');
+      $('.logo.large').addClass('hide');
+      $('.logo.medium').removeClass('hide');
+    }
+    else {
+      $('header').removeClass('small');
+      $('.logo.large').removeClass('hide');
+      $('.logo.medium').addClass('hide');
     }
   });
 });

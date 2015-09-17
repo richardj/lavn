@@ -20,9 +20,24 @@
   top: 0;
   z-index: 100;
   background: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform 0.13s ease-in;
+  transition: transform 0.13s ease-in; }
 
-/* line 23, stdin */
+/* line 25, stdin */
+.header.small {
+  -webkit-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  transform: translateY(-40px); }
+
+/* line 30, stdin */
+.header.small nav[role="main-navigation"],
+.header.small nav[role="user-navigation"] {
+  -webkit-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  transform: translateY(20px); }
+
+/* line 34, stdin */
 .header .wrapper {
   max-width: 1280px;
   margin: 0 auto;
@@ -36,15 +51,17 @@
   -ms-flex-align: center;
   align-items: center; }
 
-/* line 35, stdin */
+/* line 46, stdin */
 .header nav[role="main-navigation"] {
   height: 100px;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
-  flex: 1; }
+  flex: 1;
+  -webkit-transition: -webkit-transform 0.13s ease-in;
+  transition: transform 0.13s ease-in; }
 
-/* line 41, stdin */
+/* line 54, stdin */
 .header nav[role="main-navigation"] a {
   height: 100px;
   padding: 0 10px;
@@ -55,42 +72,63 @@
   color: #55513b;
   text-decoration: none; }
 
-/* line 51, stdin */
+/* line 64, stdin */
 .header nav[role="main-navigation"] a:hover,
 .header nav[role="main-navigation"] a.active {
   color: #ff6600; }
 
-/* line 53, stdin */
+/* line 66, stdin */
 .header .branding {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  text-indent: -9999px;
   position: absolute;
   left: 50%;
-  margin-left: -100px;
+  margin-left: -100px; }
+
+/* line 72, stdin */
+.header .branding a {
+  position: absolute;
+  display: inline-block;
+  text-indent: -9999px;
+  -webkit-transition: -webkit-transform 0.13s ease-in;
+  transition: transform 0.13s ease-in; }
+
+/* line 78, stdin */
+.header .branding .large {
+  width: 200px;
+  height: 200px;
   background: url("../img/LAVN_large.png") no-repeat 50% 50%; }
 
-/* line 62, stdin */
-.header .branding.small {
-  width: 100px;
-  height: 100px;
-  border-radius: 0; }
+/* line 82, stdin */
+.header .branding .medium {
+  width: 80px;
+  height: 94px;
+  margin-top: 50px;
+  margin-left: 61px;
+  background: url("../img/LAVN_medium.png") no-repeat 0 0; }
 
-/* line 66, stdin */
+/* line 88, stdin */
+.header .branding .hide {
+  -webkit-transform: translateY(-300px);
+  -ms-transform: translateY(-300px);
+  transform: translateY(-300px); }
+
+/* line 92, stdin */
 .header nav[role="user-navigation"] {
   height: 100px;
   padding-top: 33px;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
-  flex: 1; }
+  flex: 1;
+  -webkit-transition: -webkit-transform 0.13s ease-in;
+  transition: transform 0.13s ease-in; }
 
-/* line 73, stdin */
+/* line 101, stdin */
 .header nav[role="user-navigation"] .wrapper {
   float: right; }
 
-/* line 75, stdin */
+/* line 103, stdin */
 .header nav[role="user-navigation"].logged-in {
   display: none; }
 

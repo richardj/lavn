@@ -12,47 +12,55 @@
 /* beb16c */
 /* 989898 */
 /* 956B3F */
+@font-face {
+  font-family: 'tbotmregular';
+  src: url("../fonts/tbotm/tbotm-webfont.eot");
+  src: url("../fonts/tbotm/tbotm-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/tbotm/tbotm-webfont.woff2") format("woff2"), url("../fonts/tbotm/tbotm-webfont.woff") format("woff"), url("../fonts/tbotm/tbotm-webfont.ttf") format("truetype"), url("../fonts/tbotm/tbotm-webfont.svg#tbotmregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*
  * 16px = 1rem
  */
-/* line 18, stdin */
+/* line 25, stdin */
 html {
   font-size: 14px; }
 
-/* line 21, stdin */
+/* line 28, stdin */
 h1 {
   font-weight: 700;
   font-size: 2.25rem; }
 
-/* line 25, stdin */
+/* line 32, stdin */
 h2 {
   padding: 1em 0;
   font-weight: 300;
-  font-size: 1.714rem; }
+  font-size: 1.714rem;
+  font-family: 'tbotmregular'; }
 
-/* line 30, stdin */
+/* line 38, stdin */
 h3 {
   padding: 1em 0;
   font-weight: 300;
   font-size: 1.25rem; }
 
-/* line 35, stdin */
+/* line 43, stdin */
 p {
   font-size: 1rem;
   color: #55513b; }
 
-/* line 39, stdin */
+/* line 47, stdin */
 a {
   color: #ff6600; }
 
 /*
  * Buttons
  */
-/* line 45, stdin */
+/* line 53, stdin */
 a.btn {
   text-decoration: none; }
 
-/* line 48, stdin */
+/* line 56, stdin */
 .btn {
   padding: 10px 30px 10px 32px;
   text-decoration: none;
@@ -65,7 +73,7 @@ a.btn {
   /* solids */
   /* hover states */ }
 
-/* line 59, stdin */
+/* line 67, stdin */
 .btn:before {
   content: "<";
   position: absolute;
@@ -75,60 +83,60 @@ a.btn {
   -webkit-transition: color 0.13s ease-in;
   transition: color 0.13s ease-in; }
 
-/* line 67, stdin */
+/* line 75, stdin */
 .btn:not(.solid):hover:before {
   color: white; }
 
-/* line 69, stdin */
+/* line 77, stdin */
 .btn.green {
   color: #86b918; }
 
-/* line 71, stdin */
+/* line 79, stdin */
 .btn.purple {
   color: #6d1f80; }
 
-/* line 73, stdin */
+/* line 81, stdin */
 .btn.orange {
   color: #ff6600; }
 
-/* line 75, stdin */
+/* line 83, stdin */
 .btn.solid {
   color: #fff;
   background: #f1f1f1;
   box-shadow: inset 6px 0 0; }
 
-/* line 79, stdin */
+/* line 87, stdin */
 .btn.solid.green {
   background: #86b918;
   box-shadow: inset 6px 0 0 #6b9413; }
 
-/* line 82, stdin */
+/* line 90, stdin */
 .btn.solid.purple {
   background: #6d1f80;
   box-shadow: inset 6px 0 0 #490859; }
 
-/* line 85, stdin */
+/* line 93, stdin */
 .btn.solid.orange {
   background: #ff6600;
   box-shadow: inset 6px 0 0 #ce5200; }
 
-/* line 88, stdin */
+/* line 96, stdin */
 .btn:hover {
   padding: 10px 12px 10px 50px; }
 
-/* line 90, stdin */
+/* line 98, stdin */
 .btn.green:hover {
   box-shadow: inset 36px 0 0 #6b9413; }
 
-/* line 92, stdin */
+/* line 100, stdin */
 .btn.purple:hover {
   box-shadow: inset 36px 0 0 #490859; }
 
-/* line 94, stdin */
+/* line 102, stdin */
 .btn.orange:hover {
   box-shadow: inset 36px 0 0 #ce5200; }
 
-/* line 97, stdin */
+/* line 105, stdin */
 input.btn {
   border: none; }
 
@@ -157,21 +165,21 @@ input.btn {
 40px = 2.857rem
 
 */
-/* line 125, stdin */
+/* line 133, stdin */
 .list {
   list-style: none;
   padding: 0; }
 
-/* line 128, stdin */
+/* line 136, stdin */
 .list li {
   position: relative;
   margin-left: 2rem; }
 
-/* line 131, stdin */
+/* line 139, stdin */
 .list li .content {
   margin-left: 4rem; }
 
-/* line 133, stdin */
+/* line 141, stdin */
 .list li span {
   width: 60px;
   height: 60px;
@@ -188,7 +196,7 @@ input.btn {
   border: 3px solid #ff6600;
   background: #fff; }
 
-/* line 148, stdin */
+/* line 156, stdin */
 .list li span:after {
   content: "";
   display: block;
@@ -200,33 +208,33 @@ input.btn {
   margin-left: -3px;
   background: #f6f5ef; }
 
-/* line 158, stdin */
+/* line 166, stdin */
 .list li:last-child span:after {
   display: none; }
 
-/* line 160, stdin */
+/* line 168, stdin */
 .list.steps li span {
   border-color: white;
   color: #b4b197; }
 
-/* line 163, stdin */
+/* line 171, stdin */
 .list.steps li.active span {
   color: #ff6600;
   border-color: #ff6600; }
 
-/* line 166, stdin */
+/* line 174, stdin */
 .list.medium li span {
   width: 40px;
   height: 40px;
   font-size: 1.714rem;
   line-height: 35px; }
 
-/* line 171, stdin */
+/* line 179, stdin */
 .list .content h4 {
   font-size: 1.286rem;
   color: #55513b; }
 
-/* line 174, stdin */
+/* line 182, stdin */
 .list .content p {
   color: #85805f; }
 
