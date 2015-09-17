@@ -1,27 +1,5 @@
 var app = angular.module('lavn', []);
 
-  // window.onerror = function(){  return true;} 
-
-init();
-
-function init() {
-  loadCountDown();
-}
-
-var countdown = function() {
-  var date_now = new Date().getTime();
-  var date_future = new Date('10,1,2015').getTime();
-
-  diff = countdown(date_now, date_future, countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS);
-  document.getElementById('countdown').value = diff.toString();
-  console.log("asdas");
-};
-
-function loadCountDown() {
-  window.setInterval(countdown, 1000);
-};
-
-
 $(function() {
 
   $('.menu-button').on('click', function(event){
@@ -53,14 +31,36 @@ $(function() {
 
   $(document).on('scroll', function(e) {    
     if ($(document).scrollTop() > 100 ) {
-      $('header').addClass('small');
+      $('.header, .menu-button').addClass('small');
+
       $('.logo.large').addClass('hide');
       $('.logo.medium').removeClass('hide');
     }
     else {
-      $('header').removeClass('small');
+      $('.header, .menu-button').removeClass('small');
       $('.logo.large').removeClass('hide');
       $('.logo.medium').addClass('hide');
     }
   });
+
+  $(document).on('ready', function() {
+
+  });
 });
+
+
+
+(function() {
+  var counter = function() {
+    var date_now = new Date().getTime();
+    var date_future = new Date('10,1,2015').getTime();
+
+    diff = countdown(date_now, date_future, countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS);
+
+    $('#countdown .days:first strong').html(diff.days.toString());
+    $('#countdown .hours:first strong').html(diff.hours.toString());
+    $('#countdown .minutes:first strong').html(diff.minutes.toString());
+    $('#countdown .seconds:first strong').html(diff.seconds.toString());
+  };
+  window.setInterval(counter, 1000);
+}).call(this);

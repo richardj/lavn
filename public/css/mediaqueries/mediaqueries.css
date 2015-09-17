@@ -2,8 +2,8 @@
 /* mobile navigation */
 @media screen and (max-width: 800px) {
   /* line 4, stdin */
-  .branding {
-    background: url("../img/LAVN_medium.png") no-repeat 50% 50% !important; }
+  .video {
+    width: 100% !important; }
   /* line 6, stdin */
   .menu-button {
     position: absolute;
@@ -12,13 +12,17 @@
     padding: 0;
     width: 2.5em;
     height: 2.25em;
+    position: fixed;
+    top: 5px;
     overflow: hidden;
     border: none;
     text-indent: 2.5em;
     font-size: 1.5em;
     color: transparent;
-    background: transparent; }
-  /* line 19, stdin */
+    background: transparent;
+    -webkit-transition: -webkit-transform 0.13s ease-in;
+    transition: transform 0.13s ease-in; }
+  /* line 23, stdin */
   .menu-button:before {
     content: "";
     position: absolute;
@@ -28,10 +32,15 @@
     left: 0.5em;
     background: -webkit-linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
     background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%); }
-  /* line 28, stdin */
+  /* line 32, stdin */
+  .menu-button.small {
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  /* line 36, stdin */
   nav[role="main-navigation"] {
     display: none; }
-  /* line 30, stdin */
+  /* line 38, stdin */
   nav[role="main-navigation"].mobile {
     display: block;
     -webkit-transform: translateX(-100%);
@@ -39,16 +48,16 @@
     transform: translateX(-100%);
     -webkit-transition: -webkit-transform 0.23s ease-in;
     transition: transform 0.23s ease-in; }
-  /* line 37, stdin */
+  /* line 45, stdin */
   nav[role="main-navigation"].mobile a {
     display: block; }
-  /* line 39, stdin */
+  /* line 47, stdin */
   nav[role="main-navigation"].mobile .close {
     position: absolute;
     right: 20px;
     top: 20px;
     cursor: pointer; }
-  /* line 44, stdin */
+  /* line 52, stdin */
   nav[role="main-navigation"].mobile.open {
     height: 100%;
     padding: 4rem 2rem 2rem;
@@ -56,68 +65,70 @@
     top: 0;
     left: 0;
     z-index: 10000; }
-  /* line 51, stdin */
+  /* line 59, stdin */
   nav[role="main-navigation"].mobile.open a {
     margin: 1rem 0;
     display: block;
     font-size: 2rem; }
-  /* line 55, stdin */
+  /* line 63, stdin */
   .layout-wrapper {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
     -webkit-transition: -webkit-transform 0.23s ease-in;
     transition: transform 0.23s ease-in; }
-  /* line 61, stdin */
+  /* line 66, stdin */
   .navigation-open nav[role="main-navigation"].mobile {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0); }
-  /* line 65, stdin */
+  /* line 70, stdin */
   .navigation-open .layout-wrapper {
     -webkit-transform: translateX(90%);
     -ms-transform: translateX(90%);
     transform: translateX(90%);
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.25); }
-  /* line 70, stdin */
+  /* hide user navigation */
+  /* line 76, stdin */
+  nav[role="user-navigation"] {
+    display: none; }
+  /* line 78, stdin */
   .jumbotron {
     height: 100vh; }
-  /* line 72, stdin */
+  /* line 80, stdin */
   .jumbotron .introduction {
     max-width: 100%;
-    top: 50%; }
-  /* line 75, stdin */
+    top: auto;
+    bottom: 165px; }
+  /* line 84, stdin */
   .jumbotron .btn {
     text-align: center; }
   /*
    * timeline
    */
-  /* line 81, stdin */
+  /* line 90, stdin */
   .timeline .week.ended,
   .timeline .week.closed {
     display: none; }
-  /* line 83, stdin */
+  /* line 92, stdin */
   #how-does-it-work {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
-  /* line 89, stdin */
+  /* line 98, stdin */
   #how-does-it-work h2 {
     left: 0; }
-  /* line 91, stdin */
+  /* line 100, stdin */
   #how-does-it-work .left .pull-right {
     margin-right: 0; }
-  /* line 93, stdin */
+  /* line 102, stdin */
   #how-does-it-work .right {
     max-width: 100%;
     margin: 0 20px;
     padding: 40px 40px 40px 140px; }
-  /* line 97, stdin */
+  /* line 106, stdin */
   .post-section .block {
     margin-top: 20px; }
-  /* line 99, stdin */
+  /* line 108, stdin */
   #featured .content-wrapper {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -125,7 +136,7 @@
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
-  /* line 106, stdin */
+  /* line 115, stdin */
   .jury .member {
     margin-bottom: 60px;
     -webkit-flex-basis: 50%;
@@ -133,13 +144,13 @@
     flex-basis: 50%; } }
 
 @media screen and (max-width: 1200px) {
-  /* line 113, stdin */
+  /* line 122, stdin */
   .jury .member h3 {
     line-height: 1.4rem;
     font-size: 1rem; } }
 
 @media screen and (min-width: 800px) {
-  /* line 119, stdin */
+  /* line 128, stdin */
   nav[role="main-navigation"].mobile,
   .menu-button {
     display: none; } }
@@ -149,12 +160,12 @@
  * It seems that at 880px a lot of the blocks don't have enough space anymore so we break there 
  */
 @media screen and (min-width: 880px) {
-  /* line 127, stdin */
+  /* line 136, stdin */
   .jumbotron {
     width: 100%; } }
 
 @media screen and (min-width: 1280px) {
-  /* line 131, stdin */
+  /* line 140, stdin */
   .jumbotron {
     width: 95%; } }
 
