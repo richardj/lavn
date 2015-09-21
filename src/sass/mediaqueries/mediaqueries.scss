@@ -110,6 +110,7 @@
     .introduction {
        max-width: 100%;
        top: auto;
+       left: 5px;
        bottom: 165px;
     }
 
@@ -142,7 +143,7 @@
       .right {
         max-width: 100%;
         margin: 0 20px;
-        padding: 40px 40px 40px 140px;
+        padding: 40px 40px 40px 5px;
       }
     }
 
@@ -155,12 +156,63 @@
       width: 100%;
       flex-direction: column;
     }
+
+
+    .featured-spot header {
+      padding: 15px;
+    }
+    .featured-spot h3 {
+      padding-left: 35px;
+      background-position: 100% 15px;
+      background-size: 80px;
+    }
+    .featured-spot h3:before {
+      background-size: 34px;
+    }
   }
 
   .jury {
     .member {
       margin-bottom: 60px;
       flex-basis: 50%;
+
+      h3 {
+        padding-left: 45px;
+      }
+    }
+  }
+
+  .layout-wrapper .container-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+/*    padding-top: 50px;
+    padding-bottom: 50px; */
+
+    .container {
+      /* padding-bottom: 0; */
+    }
+  }
+
+  .content-wrapper {
+    .half {
+      padding: 0;
+
+    }
+    .half:nth-child(1) {
+      padding: 0;
+    }
+    .half:nth-child(2) .row {
+      margin-top: 10px;
+    }
+  }
+
+  #post-how-section {
+    h2 {
+      display: inline;
+      line-height: 66px;
+    }
+    .block {
+      padding: 10px 0;
     }
   }
 }
