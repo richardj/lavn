@@ -96,39 +96,40 @@
   .jumbotron .introduction {
     max-width: 100%;
     top: auto;
+    left: 5px;
     bottom: 165px; }
-  /* line 84, stdin */
+  /* line 85, stdin */
   .jumbotron .btn {
     text-align: center; }
   /*
    * timeline
    */
-  /* line 90, stdin */
+  /* line 91, stdin */
   .timeline .week.ended,
   .timeline .week.closed {
     display: none; }
-  /* line 92, stdin */
+  /* line 93, stdin */
   #how-does-it-work {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
-  /* line 98, stdin */
+  /* line 99, stdin */
   #how-does-it-work h2 {
     left: 0; }
-  /* line 100, stdin */
+  /* line 101, stdin */
   #how-does-it-work .left .pull-right {
     margin-right: 0; }
-  /* line 102, stdin */
+  /* line 103, stdin */
   #how-does-it-work .right {
     max-width: 100%;
     margin: 0 20px;
-    padding: 40px 40px 40px 140px; }
-  /* line 106, stdin */
+    padding: 40px 40px 40px 5px; }
+  /* line 107, stdin */
   .post-section .block {
     margin-top: 20px; }
-  /* line 108, stdin */
+  /* line 109, stdin */
   #featured .content-wrapper {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -136,21 +137,60 @@
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
-  /* line 115, stdin */
+  /* line 116, stdin */
+  #featured .featured-spot header {
+    padding: 15px; }
+  /* line 118, stdin */
+  #featured .featured-spot h3 {
+    padding-left: 35px;
+    background-position: 100% 15px;
+    background-size: 80px; }
+  /* line 122, stdin */
+  #featured .featured-spot h3:before {
+    background-size: 34px; }
+  /* line 124, stdin */
   .jury .member {
     margin-bottom: 60px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
-    flex-basis: 50%; } }
+    flex-basis: 50%; }
+  /* line 129, stdin */
+  .jury .member h3 {
+    padding-left: 45px; }
+  /* line 131, stdin */
+  .layout-wrapper .container-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    /*    padding-top: 50px;
+    padding-bottom: 50px; */ }
+  /* line 136, stdin */
+  .layout-wrapper .container-wrapper .container {
+    /* padding-bottom: 0; */ }
+  /* line 138, stdin */
+  .content-wrapper .half {
+    padding: 0; }
+  /* line 140, stdin */
+  .content-wrapper .half:nth-child(1) {
+    padding: 0; }
+  /* line 142, stdin */
+  .content-wrapper .half:nth-child(2) .row {
+    margin-top: 10px; }
+  /* line 144, stdin */
+  #post-how-section h2 {
+    display: inline;
+    line-height: 66px; }
+  /* line 147, stdin */
+  #post-how-section .block {
+    padding: 10px 0; } }
 
 @media screen and (max-width: 1200px) {
-  /* line 122, stdin */
+  /* line 151, stdin */
   .jury .member h3 {
     line-height: 1.4rem;
     font-size: 1rem; } }
 
 @media screen and (min-width: 800px) {
-  /* line 128, stdin */
+  /* line 157, stdin */
   nav[role="main-navigation"].mobile,
   .menu-button {
     display: none; } }
@@ -160,12 +200,12 @@
  * It seems that at 880px a lot of the blocks don't have enough space anymore so we break there 
  */
 @media screen and (min-width: 880px) {
-  /* line 136, stdin */
+  /* line 165, stdin */
   .jumbotron {
     width: 100%; } }
 
 @media screen and (min-width: 1280px) {
-  /* line 140, stdin */
+  /* line 169, stdin */
   .jumbotron {
     width: 95%; } }
 

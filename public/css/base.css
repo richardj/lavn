@@ -1207,10 +1207,10 @@ form input[type="submit"].right {
   margin: -25px -1px;
   z-index: 15;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  border-color: #86b918;
+  border-color: #ff6600;
   flex: 2;
   position: relative;
-  background: #86b918; }
+  background: #ff6600; }
 
 /* line 944, stdin */
 .timeline .week.current p {
@@ -1239,13 +1239,13 @@ form input[type="submit"].right {
   line-height: 30px;
   text-transform: uppercase;
   border-bottom: none;
-  background: #86b918;
-  box-shadow: inset 60px 0 0 #6b9413;
+  background: #ff6600;
+  box-shadow: inset 60px 0 0 #ce5200;
   transition: box-shadow 0.13s ease-in; }
 
 /* line 967, stdin */
 .timeline .week.current h3:hover {
-  box-shadow: inset 30rem 0 0 #6b9413; }
+  box-shadow: inset 30rem 0 0 #ce5200; }
 
 /* line 969, stdin */
 .timeline .week.current h3 a {
@@ -1784,51 +1784,91 @@ body.weekassignment {
   .jumbotron .introduction {
     max-width: 100%;
     top: auto;
+    left: 5px;
     bottom: 165px; }
-  /* line 1367, stdin */
+  /* line 1368, stdin */
   .jumbotron .btn {
     text-align: center; }
   /*
    * timeline
    */
-  /* line 1373, stdin */
+  /* line 1374, stdin */
   .timeline .week.ended,
   .timeline .week.closed {
     display: none; }
-  /* line 1375, stdin */
+  /* line 1376, stdin */
   #how-does-it-work {
     flex-direction: column; }
-  /* line 1377, stdin */
+  /* line 1378, stdin */
   #how-does-it-work h2 {
     left: 0; }
-  /* line 1379, stdin */
+  /* line 1380, stdin */
   #how-does-it-work .left .pull-right {
     margin-right: 0; }
-  /* line 1381, stdin */
+  /* line 1382, stdin */
   #how-does-it-work .right {
     max-width: 100%;
     margin: 0 20px;
-    padding: 40px 40px 40px 140px; }
-  /* line 1385, stdin */
+    padding: 40px 40px 40px 5px; }
+  /* line 1386, stdin */
   .post-section .block {
     margin-top: 20px; }
-  /* line 1387, stdin */
+  /* line 1388, stdin */
   #featured .content-wrapper {
     width: 100%;
     flex-direction: column; }
-  /* line 1390, stdin */
+  /* line 1391, stdin */
+  #featured .featured-spot header {
+    padding: 15px; }
+  /* line 1393, stdin */
+  #featured .featured-spot h3 {
+    padding-left: 35px;
+    background-position: 100% 15px;
+    background-size: 80px; }
+  /* line 1397, stdin */
+  #featured .featured-spot h3:before {
+    background-size: 34px; }
+  /* line 1399, stdin */
   .jury .member {
     margin-bottom: 60px;
-    flex-basis: 50%; } }
+    flex-basis: 50%; }
+  /* line 1402, stdin */
+  .jury .member h3 {
+    padding-left: 45px; }
+  /* line 1404, stdin */
+  .layout-wrapper .container-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    /*    padding-top: 50px;
+    padding-bottom: 50px; */ }
+  /* line 1409, stdin */
+  .layout-wrapper .container-wrapper .container {
+    /* padding-bottom: 0; */ }
+  /* line 1411, stdin */
+  .content-wrapper .half {
+    padding: 0; }
+  /* line 1413, stdin */
+  .content-wrapper .half:nth-child(1) {
+    padding: 0; }
+  /* line 1415, stdin */
+  .content-wrapper .half:nth-child(2) .row {
+    margin-top: 10px; }
+  /* line 1417, stdin */
+  #post-how-section h2 {
+    display: inline;
+    line-height: 66px; }
+  /* line 1420, stdin */
+  #post-how-section .block {
+    padding: 10px 0; } }
 
 @media screen and (max-width: 1200px) {
-  /* line 1395, stdin */
+  /* line 1424, stdin */
   .jury .member h3 {
     line-height: 1.4rem;
     font-size: 1rem; } }
 
 @media screen and (min-width: 800px) {
-  /* line 1401, stdin */
+  /* line 1430, stdin */
   nav[role="main-navigation"].mobile,
   .menu-button {
     display: none; } }
@@ -1838,12 +1878,12 @@ body.weekassignment {
  * It seems that at 880px a lot of the blocks don't have enough space anymore so we break there 
  */
 @media screen and (min-width: 880px) {
-  /* line 1409, stdin */
+  /* line 1438, stdin */
   .jumbotron {
     width: 100%; } }
 
 @media screen and (min-width: 1280px) {
-  /* line 1413, stdin */
+  /* line 1442, stdin */
   .jumbotron {
     width: 95%; } }
 
